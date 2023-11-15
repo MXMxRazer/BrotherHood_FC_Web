@@ -1,20 +1,47 @@
+$accept-btn-clr: #00B4D8;
+$decline-btn-clr: #FFC600;
+
+@mixin hover-color-darken($clr) {
+    &:hover {
+        background-color: darken($clr, 10%);
+        color: darken(#fff, 10%);
+    }
+}
+
 .notice-bar {
 
     &-content {
         background-color: #222;
         color: #fff;
         font-weight: bold;
+        display: flex;
+        gap: 1rem;
+        padding: 0.1rem;
+        justify-content: center;
+
+        &-text {
+            margin: 0 !important;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
 
         &-allow-btn {
-            background-color: #00B4D8;
-            padding: 0.4rem;
-            font-size: 0.4rem;
+            background-color: $accept-btn-clr;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 0.18rem;
+            cursor: pointer;
+            @include hover-color-darken($accept-btn-clr);
         }
 
         &-decline-btn {
-            background-color: #FFC600;
-            padding: 0.4rem;
-            font-size: 0.4rem;
+            background-color: $decline-btn-clr;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.8rem;
+            border-radius: 0.18rem;
+            cursor: pointer;
+            @include hover-color-darken($decline-btn-clr);
         }
 
     }
