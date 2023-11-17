@@ -1,12 +1,7 @@
+@import '../app.component.scss';
+
 $accept-btn-clr: #00B4D8;
 $decline-btn-clr: #FFC600;
-
-@mixin hover-color-darken($clr) {
-    &:hover {
-        background-color: darken($clr, 10%);
-        color: darken(#fff, 10%);
-    }
-}
 
 .notice-bar {
 
@@ -32,7 +27,7 @@ $decline-btn-clr: #FFC600;
             padding: 0.2rem 0.6rem;
             border-radius: 0.18rem;
             cursor: pointer;
-            @include hover-color-darken($accept-btn-clr);
+            @include hover-color-bg-darken($accept-btn-clr);
         }
 
         &-decline-btn {
@@ -41,7 +36,7 @@ $decline-btn-clr: #FFC600;
             font-size: 0.8rem;
             border-radius: 0.18rem;
             cursor: pointer;
-            @include hover-color-darken($decline-btn-clr);
+            @include hover-color-bg-darken($decline-btn-clr);
         }
 
     }

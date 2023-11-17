@@ -1,0 +1,12 @@
+@mixin hover-color-bg-darken($clr) {
+    &:hover {
+        background-color: darken($clr, 10%);
+        color: darken(#fff, 10%);
+    }
+}
+
+@mixin hover-color($clr) {
+    &:hover {
+        color: lighten($clr, 52%);
+    }
+}

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NoticeBarComponent } from './notice-bar/notice-bar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
     NoticeBarComponent,
     NavbarComponent,
     HeaderComponent,
+    HeroComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
