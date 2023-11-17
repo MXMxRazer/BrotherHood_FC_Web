@@ -1,0 +1,28 @@
+@import '../app.component.scss';
+
+.navbar {
+    border: 2px solid red;
+    padding: 0rem 2rem !important;
+
+    &-brand {
+        width: 82%;
+
+        &-logo {
+            width: 7%;
+            border-radius: 50%;
+        }
+    }
+
+    &-nav {
+        font-size: 1.28rem;
+        font-weight: 400;
+
+        .nav-link {
+            color: #000;
+            @include hover-color(#000);
+            transition: ease-in-out 200ms;
+        }
+
+    }
+
+}
