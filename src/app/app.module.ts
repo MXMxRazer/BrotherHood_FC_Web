@@ -8,6 +8,7 @@ import { NavbarComponent } from './header/navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { StatusBoardComponent } from './status-board/status-board.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { StatusBoardComponent } from './status-board/status-board.component';
     HeaderComponent,
     HeroComponent,
     StatusBoardComponent,
+    BlogComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
