@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NoticeBarComponent } from './notice-bar/notice-bar.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NoticeBarComponent } from './header/notice-bar/notice-bar.component';
+import { NavbarComponent } from './header/navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
+import { StatusBoardComponent } from './status-board/status-board.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HeroComponent } from './hero/hero.component';
     NavbarComponent,
     HeaderComponent,
     HeroComponent,
+    StatusBoardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
