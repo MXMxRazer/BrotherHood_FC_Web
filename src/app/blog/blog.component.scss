@@ -1,0 +1,13 @@
+.info-container-1 {
+
+    &-content-section {
+        border: 2px solid red;
+    }
+
+    &-img-section {
+        &-blog {
+            border-radius: 1rem;
+        }
+    }
+
+}

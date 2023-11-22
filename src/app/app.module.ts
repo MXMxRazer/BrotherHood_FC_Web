@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { StatusBoardComponent } from './status-board/status-board.component';
 import { BlogComponent } from './blog/blog.component';
+import { MainComponent } from './main/main.component';
+import { TypographicalHeadingsComponent } from './typographical-headings/typographical-headings.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { BlogComponent } from './blog/blog.component';
     HeroComponent,
     StatusBoardComponent,
     BlogComponent,
+    MainComponent,
+    TypographicalHeadingsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
