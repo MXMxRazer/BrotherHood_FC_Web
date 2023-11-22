@@ -1,12 +1,77 @@
+@use '../app.component.scss'as *;
+
+$button-clr: #0a58ca;
+
 .info-container-1 {
+    padding-top: 0.2rem !important;
+    overflow: hidden;
 
     &-content-section {
-        border: 2px solid red;
+        padding-bottom: 0.2rem !important;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        &-heading {
+            color: darken(#555, 8%);
+
+            .badge {
+                font-size: 0.8rem !important;
+                background-color: #0e8d03;
+                text-align: center;
+                font-style: italic;
+                transform: translateY(calc(-50%));
+                margin-left: 0.8rem;
+            }
+        }
+
+        &-context {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .btn-content {
+
+            button {
+                color: $button-clr;
+                margin-left: 0.2rem !important;
+                padding: 0 !important;
+                border: none;
+                width: auto;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $button-clr;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+
+                &:hover {
+                    @include hover-color-custom($button-clr, 18%);
+                    @include hover-underline($button-clr, 18%);
+                    border: none;
+                }
+            }
+        }
+
     }
 
     &-img-section {
+        transform: translateY(6%);
+        box-shadow: -7px -6px 13px -3px rgba(0, 0, 0, 0.6) !important;
+        border-radius: 1rem !important;
+        border-top-right-radius: 0rem !important;
+
         &-blog {
-            border-radius: 1rem;
+            border-radius: inherit;
+            ;
         }
     }
 

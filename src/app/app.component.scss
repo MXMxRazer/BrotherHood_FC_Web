@@ -5,9 +5,29 @@
     }
 }
 
-@mixin hover-color($clr) {
+@mixin hover-color($clr, $state: 'true') {
     &:hover {
-        color: lighten($clr, 52%);
+        @if ($state=='true') {
+            color: lighten($clr, 52%);
+        }
+
+        @else {
+            color: darken($clr, 4%);
+        }
+    }
+}
+
+@mixin hover-color-custom($clr, $opacity) {
+    &:hover {
+        color: lighten($color: $clr, $amount: $opacity)
+    }
+}
+
+@mixin hover-underline($clr, $opacity) {
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        background-color: lighten($clr, $opacity);
     }
 }
 
