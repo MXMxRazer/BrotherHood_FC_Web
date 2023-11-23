@@ -1,10 +1,12 @@
 @use '../app.component.scss'as *;
 
-$button-clr: #0a58ca;
+$button-clr: #eee;
 
 .info-container-1 {
     padding-top: 0.2rem !important;
     overflow: hidden;
+    display: flex;
+    background-color: rgba(25, 42, 194, 0.8274509804);
 
     &-content-section {
         padding-bottom: 0.2rem !important;
@@ -13,7 +15,7 @@ $button-clr: #0a58ca;
         gap: 2rem;
 
         &-heading {
-            color: darken(#555, 8%);
+            color: darken(#fff, 8%);
 
             .badge {
                 font-size: 0.8rem !important;
@@ -27,7 +29,7 @@ $button-clr: #0a58ca;
 
         &-context {
             font-size: 1.1rem;
-            color: #555;
+            color: #ddd;
         }
 
         .btn-content {
