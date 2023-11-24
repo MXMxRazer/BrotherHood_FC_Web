@@ -1,18 +1,25 @@
 <div class="main-content">
-  <div class="main-content-heading">
-    <app-typographical-headings></app-typographical-headings>
-  </div>
   <div class="main-content-articles">
     <div class="main-content-articles-blog">
-      <div class="main-content-articles-blog-major-blog">
-        <app-blog></app-blog>
+      <div class="main-content-articles-blog-heading">
+        <app-typographical-headings [title]="createTitle('Blogs')"></app-typographical-headings>
       </div>
-      <div class="main-content-articles-blog-minor-blog">
-        <app-minor-blogs></app-minor-blogs>
+      <div class="main-content-articles-blog-context">
+        <div class="main-content-articles-blog-context-major-blog">
+          <app-blog></app-blog>
+        </div>
+        <div class="main-content-articles-blog-context-minor-blog">
+          <app-minor-blogs></app-minor-blogs>
+        </div>
       </div>
     </div>
-    <div class="main-content-achievement">
-      <app-achievements></app-achievements>
+    <div class="main-content-articles-achievement">
+      <div class="main-content-articles-achievement-heading">
+        <app-typographical-headings [title]="createTitle('Achievements')"></app-typographical-headings>
+      </div>
+      <div class="main-content-articles-achievement-context">
+        <app-achievements></app-achievements>
+      </div>
     </div>
   </div>
 </div>

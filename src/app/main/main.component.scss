@@ -1,7 +1,22 @@
+$indentation: 0rem 2rem;
+
 .main-content {
-    padding: 0rem 2rem;
+    padding: $indentation;
 
     &-articles {
-        padding: 0rem 2rem;
+        &-blog {
+            &-context {
+                padding: $indentation;
+            }
+        }
+
+        &-achievement {
+            &-context {
+                padding: $indentation;
+            }
+        }
     }
+
+
+
 }
