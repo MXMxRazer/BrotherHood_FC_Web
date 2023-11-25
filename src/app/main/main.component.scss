@@ -11,8 +11,27 @@ $indentation: 0rem 2rem;
         }
 
         &-achievement {
+            .divider {
+                &-content {
+                    position: relative;
+                    border: 3px solid white;
+                }
+            }
+
             &-context {
                 padding: $indentation;
+
+                &-content {
+                    padding: $indentation;
+                    border: none;
+                    border-radius: 1.4rem;
+                    background: rgb(2, 0, 38);
+                    transform: translateX(0.5%);
+
+                    &:nth-child(1) {
+                        padding: 0 !important;
+                    }
+                }
             }
         }
     }

@@ -18,13 +18,11 @@
         <app-typographical-headings [title]="createTitle('Achievements')"></app-typographical-headings>
       </div>
       <div class="main-content-articles-achievement-context">
-        <app-achievements></app-achievements>
-        <div class="main-content-articles-achievement-context-sub-achievement">
-          <div class="main-content-articles-achievement-context-sub-achievement-header">
-            <app-typographical-headings [title]="createTitle('Data and Statistics')" [fontSize]="1.8"
-              [alignText]="customAlignText('center')"></app-typographical-headings>
+        <div class="main-content-articles-achievement-context-content">
+          <app-achievements></app-achievements>
+          <div class="main-content-articles-achievement-context-sub-achievement">
+            <app-sub-achievements></app-sub-achievements>
           </div>
-          <app-sub-achievements></app-sub-achievements>
         </div>
       </div>
     </div>

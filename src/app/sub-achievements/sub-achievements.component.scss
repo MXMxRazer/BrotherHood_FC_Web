@@ -1,3 +1,12 @@
+.container {
+    // background-color: rgba(25, 42, 194, 0.8274509804);
+    background: transparent;
+    padding: 4.8rem 0rem 4.8rem 0rem !important;
+    border-radius: 1rem;
+    max-width: none;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(12, 12, 179, 1) 0%, rgba(2, 0, 38, 1) 100%);
+}
+
 .g-6,
 .gx-6 {
     --bs-gutter-x: 4.5rem;

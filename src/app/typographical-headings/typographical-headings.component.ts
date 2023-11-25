@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./typographical-headings.component.scss'],
 })
 export class TypographicalHeadingsComponent {
-  @Input() title: String = '';
+  @Input() title: String | null = '';
   @Input() fontSize: Number;
   @Input() alignText: String = '';
 
