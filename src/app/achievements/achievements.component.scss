@@ -7,65 +7,69 @@ $font-family_1: Montserrat;
     justify-content: center;
 }
 
-.card-circle {
-    text-align: center;
-    margin-top: 50px;
-    background: #27496D;
-    border: 10px solid transparent;
-    color: $color_1;
-    font-family: $font-family_1;
-    padding: 50px;
-    border-radius: 50%;
-    transition: all ease-in-out 0.2s;
+.container {
+    margin-bottom: 6rem;
 
-    .card-title {
-        font-weight: 600;
-        font-size: 26px;
-    }
-
-    .card-text {
-        font-weight: 400;
-    }
-
-    .card-icon {
-        i {
-            font-size: 60px;
-            display: block;
-            transition: all ease-in-out 0.2s;
-        }
-    }
-
-    &:nth-child(2) {
-        background: #142850;
-    }
-
-    .btn {
+    .card-circle {
+        text-align: center;
+        margin-top: 50px;
+        background: #27496D;
+        border: 10px solid transparent;
+        color: $color_1;
         font-family: $font-family_1;
-        background: transparent;
-        border: 1px solid #fff;
-        text-transform: uppercase;
-        padding: 5px 30px;
-        border-radius: 0px;
-        font-weight: 600;
+        padding: 50px;
+        border-radius: 50%;
         transition: all ease-in-out 0.2s;
 
-        &:hover {
-            transform: scale(1.1);
+        .card-title {
+            font-weight: 600;
+            font-size: 26px;
         }
-    }
 
-    &:hover {
+        .card-text {
+            font-weight: 400;
+        }
+
+        .card-icon {
+            i {
+                font-size: 60px;
+                display: block;
+                transition: all ease-in-out 0.2s;
+            }
+        }
+
+        &:nth-child(2) {
+            background: #142850;
+        }
+
         .btn {
-            background: #00A8CC;
-            color: $color_1;
-            border: 1px solid transparent;
+            font-family: $font-family_1;
+            background: transparent;
+            border: 1px solid #fff;
+            text-transform: uppercase;
+            padding: 5px 30px;
+            border-radius: 0px;
+            font-weight: 600;
+            transition: all ease-in-out 0.2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
 
-        border: 10px solid #00A8CC;
+        &:hover {
+            .btn {
+                background: #00A8CC;
+                color: $color_1;
+                border: 1px solid transparent;
+            }
 
-        i {
-            text-shadow: 0px -1px 10px #00A8CC;
-            transform: scale(1.2)rotate(20deg);
+            border: 10px solid #00A8CC;
+
+            i {
+                text-shadow: 0px -1px 10px #00A8CC;
+                transform: scale(1.2)rotate(20deg);
+            }
         }
     }
 }
@@ -118,3 +122,5 @@ $font-family_1: Montserrat;
         }
     }
 }
+
+

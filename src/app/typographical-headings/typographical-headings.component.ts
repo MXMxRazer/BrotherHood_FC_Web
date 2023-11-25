@@ -7,4 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class TypographicalHeadingsComponent {
   @Input() title: String = '';
+  @Input() fontSize: Number;
+  @Input() alignText: String = '';
+
+  constructor() {
+    this.fontSize = 2.6;
+    this.alignText = 'left';
+  }
 }

@@ -5,12 +5,13 @@
     width: 100%;
     color: rgba(25, 42, 194, 0.8274509804);
     text-align: left;
-    border-bottom: 0.2rem solid #999;
-    line-height: 0.8rem;
+    border-bottom: 0.12rem solid #999;
+    line-height: 0.4rem;
+    font-size: 2.8rem;
 
     & span {
         background: #fff;
-        padding-right: 0.8rem !important;
+        padding: 0.8rem !important;
     }
 
 }
