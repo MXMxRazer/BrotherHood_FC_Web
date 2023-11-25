@@ -10,14 +10,24 @@ $font-family_1: Montserrat;
 .container {
     margin-bottom: 6rem;
 
+    .card-icon {
+        width: 100%;
+
+        &-img {
+            width: inherit;
+            padding-inline: 5rem;
+        }
+    }
+
     .card-circle {
         text-align: center;
-        margin-top: 50px;
-        background: #27496D;
-        border: 10px solid transparent;
+        margin-top: 3.4rem;
+        background: linear-gradient(0deg, rgba(9, 9, 121, 1) 35%, rgba(25, 42, 194, 0.8274509804) 100%);
+        box-shadow: 5px 5px 29px 5px #000000;
+        border: none;
         color: $color_1;
         font-family: $font-family_1;
-        padding: 50px;
+        padding: 3.6rem;
         border-radius: 50%;
         transition: all ease-in-out 0.2s;
 
@@ -39,7 +49,8 @@ $font-family_1: Montserrat;
         }
 
         &:nth-child(2) {
-            background: #142850;
+            background: rgba(25, 42, 194, 0.833);
+            background: linear-gradient(0deg, rgba(9, 9, 121, 1) 35%, rgba(25, 42, 194, 0.8274509804) 100%);
         }
 
         .btn {
@@ -122,5 +133,3 @@ $font-family_1: Montserrat;
         }
     }
 }
-
-
