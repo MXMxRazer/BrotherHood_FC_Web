@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This project contains the specific information about a registered club located in the Brampton, ON, Canada. This represents the source code location for the web-application
 developed for the club "brotherhood FC", which is a registered club, created for represeting and assisting nepalese community in the land of Canada, with the primary goal of holding championship titles in the field of Football.
 
-## Project Status - On-going
+## Project Status - On-going (Desktop Version)
 
 ## Project Started - Novemeber, 2023
 
