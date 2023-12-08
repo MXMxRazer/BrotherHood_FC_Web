@@ -1,65 +1,7 @@
-$color_1: #0062cc;
-$color_2: #fff;
-$background-color_1: #0062cc;
-
-body {
-    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
-}
-
 .contact-form {
-    background: #fff;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    width: 70%;
+    display: flex;
 
-    .form-control {
-        border-radius: 1rem;
-    }
+    &-image {}
 
-    form {
-        padding: 14%;
-
-        .row {
-            margin-bottom: -7%;
-        }
-    }
-
-    h3 {
-        margin-bottom: 8%;
-        margin-top: -10%;
-        text-align: center;
-        color: $color_1;
-    }
-
-    .btnContact {
-        width: 50%;
-        border: none;
-        border-radius: 1rem;
-        padding: 1.5%;
-        background: #dc3545;
-        font-weight: 600;
-        color: $color_2;
-        cursor: pointer;
-    }
-}
-
-.contact-image {
-    text-align: center;
-
-    img {
-        border-radius: 6rem;
-        width: 11%;
-        margin-top: -3%;
-        transform: rotate(29deg);
-    }
-}
-
-.btnContactSubmit {
-    width: 50%;
-    border-radius: 1rem;
-    padding: 1.5%;
-    color: $color_2;
-    background-color: $background-color_1;
-    border: none;
-    cursor: pointer;
+    &-form {}
 }

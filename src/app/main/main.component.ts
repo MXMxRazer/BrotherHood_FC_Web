@@ -14,12 +14,12 @@ export class MainComponent {
     this.alignText = '';
   }
 
-  protected createTitle(title: String): String {
+  public createTitle(title: String): String {
     this.title = title;
     return this.title;
   }
 
-  protected customAlignText(align: String): String {
+  public customAlignText(align: String): String {
     this.alignText = align;
     return this.alignText;
   }
