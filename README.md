@@ -16,5 +16,6 @@ developed for the club "brotherhood FC", which is a registered club, created for
 1. Angular: (FrontEnd)
 2. Spring: (BackEnd)
 3. MySQL: (Database / Storage)
+4. AWS: (Cloud Services)
 
 ## Information to be added, ongoing with project.
