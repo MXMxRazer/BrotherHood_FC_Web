@@ -1,7 +1,14 @@
-.contact-form {
+.container {
     display: flex;
+    gap: 10%;
+    justify-content: center;
 
-    &-image {}
+    &-img-section {
+        width: 30%;
 
-    &-form {}
+        &-img {
+            width: 100%;
+        }
+    }
+
 }
