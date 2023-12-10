@@ -14,6 +14,10 @@ import { TypographicalHeadingsComponent } from './typographical-headings/typogra
 import { MinorBlogsComponent } from './minor-blogs/minor-blogs.component';
 import { BlogContentComponent } from './blog-content/blog-content.component';
 import { AchievementsComponent } from './achievements/achievements.component';
+import { SubAchievementsComponent } from './sub-achievements/sub-achievements.component';
+import { MembersComponent } from './members/members.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,10 @@ import { AchievementsComponent } from './achievements/achievements.component';
     MinorBlogsComponent,
     BlogContentComponent,
     AchievementsComponent,
+    SubAchievementsComponent,
+    MembersComponent,
+    ContactPageComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

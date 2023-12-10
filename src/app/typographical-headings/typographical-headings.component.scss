@@ -1,19 +1,17 @@
 .heading-blogs {
-    margin-bottom: 2rem !important;
-    margin-top: 2rem !important;
+    margin-bottom: 4rem !important;
+    margin-top: 3.8rem !important;
     position: relative;
     width: 100%;
     color: rgba(25, 42, 194, 0.8274509804);
+    text-align: left;
+    border-bottom: 0.12rem solid #999;
+    line-height: 0.4rem;
+    font-size: 2.8rem;
 
-    &:after {
-        content: "";
-        height: 3px;
-        width: calc(100% - 10rem);
-        background: #999;
-        display: block;
-        position: absolute;
-        top: 56%;
-        right: 0;
+    & span {
+        background: #fff;
+        padding: 0.8rem !important;
     }
 
 }

@@ -1,5 +1,37 @@
-.hero-container {
-    border: 2px solid blue;
-    width: 88%;
-    margin: 3rem auto auto auto;
+.super-hero-container {
+    overflow: hidden;
+
+    .hero-container {
+        // border: 2px solid blue;
+        margin: 4rem auto 4rem auto;
+        width: 94%;
+        transform: translateX(7%);
+
+        img {
+            -webkit-animation: mover 1s infinite alternate;
+            animation: mover 1s infinite alternate;
+        }
+
+    }
+}
+
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-2rem);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-2rem);
+    }
 }
