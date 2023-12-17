@@ -18,6 +18,7 @@ import { SubAchievementsComponent } from './sub-achievements/sub-achievements.co
 import { MembersComponent } from './members/members.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { FooterComponent } from './footer/footer.component';
+import { Logger } from './logger/logger';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [Logger],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

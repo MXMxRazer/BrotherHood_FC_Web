@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
+import { Logger } from '../logger/logger';
 
 @Component({
   selector: 'app-contact-page',
@@ -8,7 +9,10 @@ import { Component } from '@angular/core';
 export class ContactPageComponent {
   values = '';
 
-  onKey(event: any) {
+  constructor(private logger: Logger) {}
+
+  onKey(event: any): void {
     this.values += event.target.value;
+    this.logger.log(this.values);
   }
 }
