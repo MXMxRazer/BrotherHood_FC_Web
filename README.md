@@ -1,23 +1,52 @@
-# BHFCFrontend
+# Brotherhood FC Web Application
 
-## -- Currently, in progress...
+## Project Overview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+Welcome to the Brotherhood FC Web Application repository! This project is dedicated to developing a web application for "Brotherhood FC," a registered club located in Brampton, ON, Canada. The club aims to represent and assist the Nepalese community in Canada, with a primary focus on achieving championship titles in the field of football (soccer).
 
-This project contains the specific information about a registered club located in the Brampton, ON, Canada. This represents the source code location for the web-application
-developed for the club "brotherhood FC", which is a registered club, created for represeting and assisting nepalese community in the land of Canada, with the primary goal of holding championship titles in the field of Football.
+## Project Details
 
-## Project Status - On-going (Desktop Version)
+- **Project Status:** In Progress (Desktop Version)
+- **Project Started:** November 2023
+- **Expected Deadline:** December 2023
 
-## Project Started - Novemeber, 2023
+## Technologies Used
 
-## Expected Deadline - December, 2023
+- **Frontend:** Angular (Version 16.2.9)
+- **Backend:** Spring Framework
+- **Database/Storage:** MySQL
+- **Cloud Services:** AWS (Amazon Web Services)
 
-## Major Frameworks:
+## Project Description
 
-1. Angular: (FrontEnd)
-2. Spring: (BackEnd)
-3. MySQL: (Database / Storage)
-4. AWS: (Cloud Services)
+The Brotherhood FC Web Application is designed to serve the needs of the club and its community. The web application is being developed with Angular for the frontend, Spring for the backend, MySQL for database management, and AWS for cloud services.
 
-## Information to be added, ongoing with project.
+## Major Features
+
+- **Club Information:** Detailed information about Brotherhood FC, its mission, and its role in the Nepalese community in Canada.
+- **Championship Goals:** A section dedicated to the club's primary goal of achieving championship titles in football.
+- **Angular CLI Version:** The project was generated with Angular CLI version 16.2.9.
+
+## Project Structure
+
+The project structure follows best practices for Angular applications. The frontend, powered by Angular, provides a user-friendly interface, while the backend, built with the Spring framework, ensures robust server-side functionality. The MySQL database is employed for efficient data storage, and AWS is utilized for cloud services to enhance scalability and performance.
+
+## How to Contribute
+
+We welcome contributions from the community to enhance and improve the Brotherhood FC Web Application. If you'd like to contribute, please follow the guidelines outlined in the `CONTRIBUTING.md` file.
+
+## Getting Started
+
+To get started with the project, follow the steps below:
+
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Follow the setup instructions in the `INSTALLATION.md` file.
+
+## Project Status
+
+The project is currently in progress, focusing on the development of the desktop version. Ongoing updates and information will be added to the project as development continues.
+
+Thank you for your interest in the Brotherhood FC Web Application! We look forward to the positive impact this project will have on the Nepalese community in Canada.
+
+*Note: Information in this README.md is subject to change as the project progresses.*
