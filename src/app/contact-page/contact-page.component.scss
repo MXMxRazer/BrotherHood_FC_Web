@@ -1,14 +1,56 @@
 .container {
     display: flex;
-    gap: 10%;
+    gap: 12%;
     justify-content: center;
 
     &-img-section {
-        width: 30%;
+        width: 46%;
+        padding: 1em;
 
         &-img {
-            width: 100%;
+            width: 90%;
         }
+    }
+
+    &-form {
+        width: 60%;
+        background-color: rgb(33, 81, 165);
+        color: #eee;
+        padding: 1.4em 1.8rem;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        border-top-right-radius: 0.2rem;
+        border-bottom-left-radius: 0.2rem;
+        box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.75);
+
+        & {
+
+            label {
+                font-size: 1.1em;
+                padding-bottom: 0.3em;
+            }
+
+            input,
+            textarea {
+                padding: 0.6em;
+                margin-bottom: 0.2em;
+            }
+
+            .button-form {
+                width: 100%;
+                display: block;
+                text-align: right;
+
+                button {
+                    padding: 0.4em 0.8em;
+                    font-size: 1.1em;
+                    margin-top: 1em;
+                }
+            }
+
+
+        }
+
     }
 
 }

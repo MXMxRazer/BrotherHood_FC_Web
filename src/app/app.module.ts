@@ -19,6 +19,7 @@ import { MembersComponent } from './members/members.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { Logger } from './logger/logger';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { Logger } from './logger/logger';
     MembersComponent,
     ContactPageComponent,
     FooterComponent,
+    GalleryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [Logger],
