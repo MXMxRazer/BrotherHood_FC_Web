@@ -1,5 +1,5 @@
 import { Component, Injectable } from '@angular/core';
-import { Logger } from '../logger/logger';
+import { Logger } from '../../logger/logger';
 
 @Component({
   selector: 'app-contact-page',

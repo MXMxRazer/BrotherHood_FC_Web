@@ -7,19 +7,20 @@ import { NoticeBarComponent } from './header/notice-bar/notice-bar.component';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
-import { StatusBoardComponent } from './status-board/status-board.component';
-import { BlogComponent } from './blog/blog.component';
+import { StatusBoardComponent } from './main/status-board/status-board.component';
+import { BlogComponent } from './main/blog/blog.component';
 import { MainComponent } from './main/main.component';
 import { TypographicalHeadingsComponent } from './typographical-headings/typographical-headings.component';
-import { MinorBlogsComponent } from './minor-blogs/minor-blogs.component';
-import { BlogContentComponent } from './blog-content/blog-content.component';
-import { AchievementsComponent } from './achievements/achievements.component';
-import { SubAchievementsComponent } from './sub-achievements/sub-achievements.component';
-import { MembersComponent } from './members/members.component';
-import { ContactPageComponent } from './contact-page/contact-page.component';
+import { MinorBlogsComponent } from './main/minor-blogs/minor-blogs.component';
+import { BlogContentComponent } from './main/blog-content/blog-content.component';
+import { AchievementsComponent } from './main/achievements/achievements.component';
+import { SubAchievementsComponent } from './main/achievements/sub-achievements/sub-achievements.component';
+import { MembersComponent } from './main/members/members.component';
+import { ContactPageComponent } from './footer/contact-page/contact-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { Logger } from './logger/logger';
-import { GalleryComponent } from './gallery/gallery.component';
+import { GalleryComponent } from './main/gallery/gallery.component';
+import { CarouselComponent } from './main/gallery/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     ContactPageComponent,
     FooterComponent,
     GalleryComponent,
+    CarouselComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [Logger],

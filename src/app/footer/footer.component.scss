@@ -1,3 +1,6 @@
+$indentation: 0rem 2rem;
+
+
 .footer-main {
     position: relative;
 
@@ -15,6 +18,7 @@
         background: transparent;
         z-index: 1;
         position: relative;
+        padding: $indentation;
     }
 
 }
