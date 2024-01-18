@@ -16,6 +16,8 @@ $button-clr: #eee;
         gap: 2rem;
 
         &-heading {
+            font-size: 3.8em !important;
+            line-height: 100%;
             color: darken(#fff, 8%);
 
             .badge {
@@ -31,6 +33,7 @@ $button-clr: #eee;
         &-context {
             font-size: 1.1rem;
             color: #ddd;
+            line-height: 130%;
         }
 
         .btn-content {

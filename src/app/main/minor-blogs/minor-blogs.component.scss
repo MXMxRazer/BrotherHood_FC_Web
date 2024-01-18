@@ -1,4 +1,19 @@
 .container-minor-blogs {
     width: 98%;
     margin: auto;
+
+    .content-box {
+        strong {
+            font-size: 1.4em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        .date {
+            font-size: 1em;
+        }
+    }
+
 }

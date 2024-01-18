@@ -1,0 +1,14 @@
+@import '../../app.component.scss';
+
+.application-super {
+    background-color: #00008bd3;
+    @include spread-around();
+    color: #eee;
+
+    &-sub {
+        width: 80%;
+        background-color: transparent;
+        margin: auto;
+        border: 2px solid red;
+    }
+}

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +21,10 @@ import { FooterComponent } from './footer/footer.component';
 import { Logger } from './logger/logger';
 import { GalleryComponent } from './main/gallery/gallery.component';
 import { CarouselComponent } from './main/gallery/carousel/carousel.component';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ApplicationComponent } from './main/application/application.component';
 
 @NgModule({
   declarations: [
@@ -43,8 +47,17 @@ import { CarouselComponent } from './main/gallery/carousel/carousel.component';
     GalleryComponent,
     CarouselComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [Logger],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    ApplicationComponent,
+  ],
+  providers: [
+    Logger,
+    { provide: LocationStrategy, useClass: PathLocationStrategy },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
