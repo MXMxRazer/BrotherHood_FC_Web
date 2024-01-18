@@ -1,14 +1,94 @@
 @import '../../app.component.scss';
 
+$membership_content_clr: #010174dc;
+
 .application-super {
-    background-color: #00008bd3;
+    background-color: $membership_content_clr;
     @include spread-around();
     color: #eee;
 
     &-sub {
+        padding: 1.4em;
         width: 80%;
         background-color: transparent;
         margin: auto;
-        border: 2px solid red;
+
+        &-header {
+            margin: 1em auto 2em auto;
+            text-align: center;
+
+            mat-card-title {
+                font-size: 2.8em;
+                margin-bottom: 0.3em;
+                font-weight: bolder;
+            }
+
+            mat-card-subtitle {
+                font-style: italic;
+                font-size: 1.2em;
+            }
+        }
+
+        &-content {
+            overflow: hidden;
+            display: flex;
+            flex-shrink: 1;
+            gap: 10%;
+            margin: 2em 0em;
+            justify-content: center;
+
+            &-container {
+
+                mat-card {
+                    background: #eee;
+                    box-shadow: 5px 5px 15px 5px #000000;
+                    color: #333;
+
+                    &-header {
+                        font-size: 2.8em;
+                        font-weight: bolder;
+                        margin: 0.6em auto 0em auto;
+
+                        mat-card-title {
+                            font-size: inherit;
+                            font-weight: inherit;
+                        }
+
+                    }
+
+                    .container-card-content {
+                        padding: 0.8em 1.8em;
+
+                        &-text {
+                            margin: 3em 0em;
+                            font-size: 1.2em;
+                            font-weight: 400;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+
+                mat-divider {
+                    border: 2px solid #000;
+                    border-radius: 20%;
+                }
+
+                mat-card-actions {
+                    display: flex;
+                    gap: 4%;
+                    justify-content: center;
+                    padding: 1.4em 0em;
+
+                    .action-btn {
+                        background-color: darken($membership_content_clr, 10%);
+                        color: #eee;
+                        font-size: 1.2em;
+                        width: 24%;
+                        padding: 0.2em;
+                    }
+                }
+            }
+
+        }
     }
 }

@@ -25,6 +25,9 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ApplicationComponent } from './main/application/application.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatStepperModule } from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -53,6 +56,9 @@ import { ApplicationComponent } from './main/application/application.component';
     BrowserAnimationsModule,
     MatSlideToggleModule,
     ApplicationComponent,
+    MatCardModule,
+    MatDialogModule,
+    MatStepperModule,
   ],
   providers: [
     Logger,
