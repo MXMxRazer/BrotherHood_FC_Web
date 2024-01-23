@@ -7,10 +7,7 @@ import {
   MatDialog,
   MAT_DIALOG_DATA,
   MatDialogRef,
-  MatDialogTitle,
-  MatDialogContent,
-  MatDialogActions,
-  MatDialogClose,
+  MatDialogModule,
 } from '@angular/material/dialog';
 import {
   FormBuilder,
@@ -20,15 +17,12 @@ import {
 } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {
-  MatStepper,
-  MatStep,
-  MatStepperModule,
-} from '@angular/material/stepper';
+import { MatStepperModule } from '@angular/material/stepper';
 
 export interface UserInfo {
   name: string;
   email: string;
+  message: string;
 }
 
 @Component({
@@ -41,12 +35,13 @@ export interface UserInfo {
 export class ApplicationComponent {
   name: any;
   email: string = '';
+  message: string = '';
 
   constructor(public dialog: MatDialog) {}
 
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogOverview, {
-      data: { name: this.name, email: this.email },
+      data: { name: this.name, email: this.email, message: this.message },
     });
 
     dialogRef.afterClosed().subscribe((res) => {
@@ -60,6 +55,7 @@ export class ApplicationComponent {
 @Component({
   selector: 'dialog-overview',
   templateUrl: './dialog/dialog-overview.component.html',
+  styleUrls: ['./dialog/dialog-overview.component.scss'],
   standalone: true,
   imports: [
     MatCardModule,
@@ -72,16 +68,14 @@ export class ApplicationComponent {
     MatButtonModule,
     MatStepperModule,
     ReactiveFormsModule,
+    MatDialogModule,
   ],
 })
 export class DialogOverview {
-  firstFormGroup = this._formBuilder.group({
-    firstCtrl: ['', Validators.required],
-  });
   secondFormGroup = this._formBuilder.group({
+    firstCtrl: ['', Validators.required],
     secondCtrl: ['', Validators.required],
   });
-  isEditable = false;
 
   constructor(
     public dialogRef: MatDialogRef<DialogOverview>,
@@ -89,8 +83,12 @@ export class DialogOverview {
     private _formBuilder: FormBuilder
   ) {}
 
-  onNoClick(): void {
-    console.log(this.firstFormGroup.value, this.secondFormGroup.value);
-    // this.dialogRef.close();
+  onComplete(): void {
+    console.log(this.secondFormGroup.value);
+    this.dialogRef.close();
+  }
+
+  onClose(): void {
+    this.dialogRef.close();
   }
 }

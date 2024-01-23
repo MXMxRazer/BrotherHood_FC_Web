@@ -40,7 +40,6 @@ import { MatStepperModule } from '@angular/material/stepper';
     BlogComponent,
     MainComponent,
     TypographicalHeadingsComponent,
-    MinorBlogsComponent,
     BlogContentComponent,
     AchievementsComponent,
     SubAchievementsComponent,
@@ -51,6 +50,7 @@ import { MatStepperModule } from '@angular/material/stepper';
     CarouselComponent,
   ],
   imports: [
+    MinorBlogsComponent,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
