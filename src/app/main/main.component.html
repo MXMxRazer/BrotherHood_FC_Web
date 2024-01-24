@@ -1,5 +1,6 @@
 <div class="main-content">
   <div class="main-content-articles">
+    <!-- BLOG COMPONENT -->
     <div class="main-content-articles-blog">
       <div class="main-content-articles-blog-heading">
         <app-typographical-headings [title]="createTitle('Blogs')"></app-typographical-headings>
@@ -13,6 +14,19 @@
         </div>
       </div>
     </div>
+    <!-- GALLERY COMPONENT -->
+    <div class="main-content-articles-gallery">
+      <div class="main-content-articles-gallery-heading">
+        <app-typographical-headings [title]="createTitle('Gallery')"></app-typographical-headings>
+      </div>
+      <div class="main-content-articles-gallery-context">
+        <div class="main-content-articles-gallery-context-content">
+          <app-gallery></app-gallery>
+          <!-- GALLERY COMPONENT INSERT HERE -->
+        </div>
+      </div>
+    </div>
+    <!-- ACHIEVEMENTS COMPONENT -->
     <div class="main-content-articles-achievement">
       <div class="main-content-articles-achievement-heading">
         <app-typographical-headings [title]="createTitle('Achievements')"></app-typographical-headings>
@@ -26,12 +40,29 @@
         </div>
       </div>
     </div>
-    <div class="main-content-articles-members">
+    <!-- MEMBERS COMPONENT -->
+    <!-- <div class="main-content-articles-members">
       <div class="main-content-articles-members-heading">
         <app-typographical-headings [title]="createTitle('Team Members')"></app-typographical-headings>
       </div>
       <div class="main-content-articles-members-context">
-        <app-members></app-members>
+        <div class="main-content-articles-members-context-inner-context">
+          <app-members></app-members>
+        </div>
+      </div>
+    </div> -->
+    <!-- Appplication COMPONENT -->
+    <div class="main-content-articles-application">
+      <div class="main-content-articles-application-heading">
+        <app-typographical-headings [title]="createTitle('')"></app-typographical-headings>
+      </div>
+      <div class="main-content-articles-application-context">
+        <div class="main-content-articles-application-context-content">
+          <app-application></app-application>
+          <!-- <div class="main-content-articles-achievement-context-sub-achievement">
+            <app-sub-achievements></app-sub-achievements>
+          </div> -->
+        </div>
       </div>
     </div>
   </div>

@@ -2,7 +2,6 @@
     overflow: hidden;
 
     .hero-container {
-        // border: 2px solid blue;
         margin: 4rem auto 4rem auto;
         width: 94%;
         transform: translateX(7%);
@@ -11,6 +10,16 @@
             -webkit-animation: mover 1s infinite alternate;
             animation: mover 1s infinite alternate;
         }
+
+        h1 {
+            font-size: 4.2em;
+
+            h2 {
+                font-size: 0.6em;
+            }
+
+        }
+
 
     }
 }

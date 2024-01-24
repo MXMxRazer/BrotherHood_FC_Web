@@ -1,0 +1,45 @@
+$background-clr: rgba(6, 6, 63, 0.445);
+$txt-clr: #ccc;
+
+.dialog-container {
+    background-color: $background-clr;
+    color: $txt-clr;
+
+    &-stepper {
+        background-color: $background-clr;
+        color: inherit;
+
+        &-form {
+            display: flex;
+            flex-direction: column;
+            width: 44%;
+            margin: auto;
+            gap: 1em;
+        }
+    }
+
+    &-title {
+        color: inherit;
+    }
+
+    &-content {
+        color: inherit;
+    }
+
+    &-actions {
+        button {
+            color: $txt-clr;
+        }
+    }
+
+}
+
+* {
+    ::-webkit-scrollbar-track {
+        background: $txt-clr;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $background-clr !important;
+    }
+}

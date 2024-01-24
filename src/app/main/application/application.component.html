@@ -1,0 +1,37 @@
+<!-- TODO: KEEP THE OUTER LAYER IN THE MAIN SCSS FILE NOT IN THE COMPONENT () -->
+<div class="application-super">
+    <mat-card class="application-super-sub">
+        <mat-card-header class="application-super-sub-header">
+            <mat-card-title>Apply for Membership</mat-card-title>
+            <mat-card-subtitle>Some subtitle here</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="application-super-sub-content">
+            <div class="application-super-sub-content-container" *ngFor="let ele of [1, 2]; index as i;">
+                <mat-card class="{{'application-super-sub-content-container-type-' + ele}}">
+                    <mat-card-header>
+                        <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+                        <mat-card-title>Free Tier --\> INDEX {{ ele }}</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content class="container-card-content">
+                        <div class="container-card-content-text">
+                            <p>This card has divider and indeterminate progress as footer</p>
+                            <p>
+                                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
+                                Japan.
+                                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+                                originally
+                                bred for hunting.
+                            </p>
+                        </div>
+                        <mat-divider></mat-divider>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-raised-button class="action-btn action-btn-apply"
+                            (click)="openDialog()">Apply</button>
+                        <button mat-raised-button class="action-btn action-btn-learn">Learn</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
