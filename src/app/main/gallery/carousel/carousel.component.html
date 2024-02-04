@@ -1,0 +1,7 @@
+<div class="carousel">
+    <div class="slide-container" [@carouselAnimation]="currentIndex">
+        <img [src]="slides[currentIndex].url" alt="Slide">
+    </div>
+    <div (click)="goToPrevious()" class="arrow left-arrow">❰</div>
+    <div (click)="goToNext()" class="arrow right-arrow">❱</div>
+</div>

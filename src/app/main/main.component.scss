@@ -50,6 +50,13 @@ $indentation: 0rem 2rem;
             }
         }
 
+        &-gallery {
+            &-context {
+                @include spread-around();
+                background-color: #444;
+            }
+        }
+
 
         &-members {
 

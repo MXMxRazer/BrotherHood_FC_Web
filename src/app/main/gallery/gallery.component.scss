@@ -1,6 +1,20 @@
-.container {
-    display: block;
-    height: 500px;
-    width: 500px;
+.gallery-sub-container {
+    height: 100%;
+    width: 48%;
+    transform: scaleX(1.12);
     padding: 2em;
+    margin: auto;
+
+    .gallery-expansion-panel {
+
+        &-accordian {
+
+            mat-panel-description,
+            mat-panel-title,
+            p {
+                color: red;
+                transform: scaleX(0.8) !important;
+            }
+        }
+    }
 }
