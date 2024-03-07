@@ -6,7 +6,7 @@ $button-clr: #eee;
     padding-top: 0.2rem !important;
     overflow: hidden;
     display: flex;
-    background-color: rgba(25, 42, 194, 0.8274509804);
+    background-color: #3e0c15f7;
     margin: auto;
 
     &-content-section {
@@ -18,7 +18,7 @@ $button-clr: #eee;
         &-heading {
             font-size: 3.8em !important;
             line-height: 100%;
-            color: darken(#fff, 8%);
+            color: darken(#fdc52c, 8%);
 
             .badge {
                 font-size: 0.8rem !important;

@@ -4,17 +4,29 @@
 
     .content-box {
         cursor: pointer;
+        background-color: #3e0c15f7;
 
         strong {
             font-size: 1.4em;
+            color: #fdc52c !important;
         }
 
         h3 {
             font-size: 1.2em;
+            color: #fff;
         }
 
         .date {
             font-size: 1em;
+            color: #ccc;
+        }
+
+        .card-text {
+            color: #fff;
+        }
+
+        button {
+            color: #cb9708;
         }
     }
 

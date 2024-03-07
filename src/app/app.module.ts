@@ -29,6 +29,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatStepperModule } from '@angular/material/stepper';
 import { ResponsiveComponentComponent } from './responsive-component/responsive-component.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatchesComponent } from './matches/matches.component';
 
 @NgModule({
   declarations: [
@@ -45,13 +47,14 @@ import { ResponsiveComponentComponent } from './responsive-component/responsive-
     AchievementsComponent,
     SubAchievementsComponent,
     MembersComponent,
-    ContactPageComponent,
     FooterComponent,
     GalleryComponent,
-    CarouselComponent,
     ResponsiveComponentComponent,
+    CarouselComponent,
+    MatchesComponent,
   ],
   imports: [
+    ContactPageComponent,
     MinorBlogsComponent,
     BrowserModule,
     AppRoutingModule,
@@ -61,6 +64,7 @@ import { ResponsiveComponentComponent } from './responsive-component/responsive-
     MatCardModule,
     MatDialogModule,
     MatStepperModule,
+    MatExpansionModule,
   ],
   providers: [
     Logger,

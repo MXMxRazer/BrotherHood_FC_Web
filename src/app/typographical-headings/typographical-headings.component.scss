@@ -3,15 +3,16 @@
     margin-top: 3.8rem !important;
     position: relative;
     width: 100%;
-    color: rgba(25, 42, 194, 0.8274509804);
+    color: #fdc52c;
     text-align: left;
-    border-bottom: 0.12rem solid #999;
+    border-bottom: 0.18rem solid #3e0c15f7;
     line-height: 0.4rem;
-    font-size: 2.8rem;
 
     & span {
-        background: #fff;
-        padding: 0.8rem !important;
+        background: #3e0c15f7;
+        padding: 0.92rem !important;
+        border-radius: 0.4em;
+        font-size: 0.78em;
     }
 
 }
