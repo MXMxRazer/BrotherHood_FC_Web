@@ -24,17 +24,13 @@ $indentation: 0rem 2rem;
 
             &-context {
                 @include spread-around();
-                background: linear-gradient(0deg, rgba(9, 9, 121, 1) 35%, rgba(25, 42, 194, 0.8274509804) 100%);
-                box-shadow: 5px 5px 8px 5px rgba(25, 42, 194, 0.8274509804);
-                background: rgb(2, 0, 38);
+                background: rgba(64, 1, 1);
 
                 &-content {
-                    // padding: $indentation;
                     width: 80%;
                     margin: auto;
                     border: none;
                     border-radius: 1.4rem;
-                    // background: rgb(2, 0, 38);
                     transform: translateX(0.5%);
 
                     &:nth-child(1) {
@@ -45,7 +41,7 @@ $indentation: 0rem 2rem;
                 &-sub-achievement {
                     @include spread-around();
                     padding: 0em 2em;
-                    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(12, 12, 179, 1) 0%, rgba(2, 0, 38, 1) 100%) !important;
+                    background: linear-gradient(0deg, #fdc52c 0%, rgba(62, 1, 1, 0.288) 100%) !important;
                 }
             }
         }
@@ -53,21 +49,20 @@ $indentation: 0rem 2rem;
         &-gallery {
             &-context {
                 @include spread-around();
-                background-color: #444;
             }
         }
 
 
         &-members {
 
+
             &-context {
                 @include spread-around();
-                background: linear-gradient(0deg, rgb(25, 71, 151) 35%, rgb(33, 81, 165) 100%);
+                background: linear-gradient(0deg, #3e0c15f7 35%, #641422f7 100%);
 
                 &-inner-context {
-                    width: 80%;
+                    width: 78%;
                     margin: auto;
-                    transform: translateX(-2%);
                 }
             }
         }

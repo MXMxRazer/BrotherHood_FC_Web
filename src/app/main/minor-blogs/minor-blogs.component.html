@@ -3,11 +3,11 @@
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
             (click)="openBlogContent()">
             <div class="col p-4 d-flex flex-column position-static content-box">
-                <strong class="d-inline-block mb-2 text-primary">{{
+                <strong class="d-inline-block mb-2">{{
                     blog.type
                     }}</strong>
                 <h3 class="mb-0">{{ blog.title }}</h3>
-                <div class="mb-2 text-muted date">{{ blog.date }}</div>
+                <div class="mb-2 date">{{ blog.date }}</div>
                 <p class="card-text mb-auto">{{ blog.content }}</p>
                 <button mat-button color="primary" class="">Continue Reading</button>
             </div>

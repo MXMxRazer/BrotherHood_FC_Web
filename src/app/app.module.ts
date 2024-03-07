@@ -30,6 +30,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatStepperModule } from '@angular/material/stepper';
 import { ResponsiveComponentComponent } from './responsive-component/responsive-component.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatchesComponent } from './matches/matches.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     GalleryComponent,
     ResponsiveComponentComponent,
     CarouselComponent,
+    MatchesComponent,
   ],
   imports: [
     ContactPageComponent,

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { SlideInterface } from './carousel/types/slide.interface.types';
+import { MatDialog } from '@angular/material/dialog';
+import { PhotoDialog } from './photo-dialog/photo.dialog.component';
 
 @Component({
   selector: 'app-gallery',
@@ -21,4 +23,18 @@ export class GalleryComponent {
       title: 'Slide 3',
     },
   ];
+
+  constructor(public dialog: MatDialog) {}
+
+  openDialog(
+    enterAnimationDuration: string,
+    exitAnimationDuration: string
+  ): void {
+    this.dialog.open(PhotoDialog, {
+      width: '94%',
+      height: '90vh',
+      enterAnimationDuration,
+      exitAnimationDuration,
+    });
+  }
 }
