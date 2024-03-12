@@ -1,6 +1,6 @@
 @import '../../app.component.scss';
 
-$membership_content_clr: #010174dc;
+$membership_content_clr: #51111df7;
 
 .application-super {
     background-color: $membership_content_clr;
@@ -16,6 +16,7 @@ $membership_content_clr: #010174dc;
         &-header {
             margin: 1em auto 2em auto;
             text-align: center;
+            color: #fdc52c;
 
             mat-card-title {
                 font-size: 2.8em;
@@ -40,7 +41,7 @@ $membership_content_clr: #010174dc;
             &-container {
 
                 mat-card {
-                    background: #eee;
+                    background-color: #ddd;
                     box-shadow: 5px 5px 15px 5px #000000;
                     color: #333;
 

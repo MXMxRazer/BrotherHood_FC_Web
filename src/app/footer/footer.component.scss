@@ -3,6 +3,9 @@ $indentation: 0rem 2rem;
 
 .footer-main {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 
     &-design {
         z-index: 0;
@@ -15,6 +18,7 @@ $indentation: 0rem 2rem;
     }
 
     &-contents {
+        margin-top: 3.2em;
         background: transparent;
         z-index: 1;
         position: relative;

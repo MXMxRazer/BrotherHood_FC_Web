@@ -9,6 +9,7 @@ export class TypographicalHeadingsComponent {
   @Input() title: String | null = '';
   @Input() fontSize: Number = 0;
   @Input() alignText: String = '';
+  @Input() specialHeading: boolean = false;
 
   constructor() {
     this.fontSize = 2.6;

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'BH_FC_frontend';
+  title: String;
 
   public images = [
     {
@@ -25,4 +25,13 @@ export class AppComponent {
       imgAlt: 'Image 3',
     },
   ];
+
+  constructor() {
+    this.title = '';
+  }
+
+  public createTitle(title: String): String {
+    this.title = title;
+    return this.title;
+  }
 }

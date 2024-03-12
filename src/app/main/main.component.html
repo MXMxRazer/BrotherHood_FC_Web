@@ -17,7 +17,7 @@
     <!-- GALLERY COMPONENT -->
     <div class="main-content-articles-gallery">
       <div class="main-content-articles-gallery-heading">
-        <app-typographical-headings [title]="createTitle('Gallery')"></app-typographical-headings>
+        <app-typographical-headings [title]="createTitle('Gallery')" [specialHeading]="true" />
       </div>
       <div class="main-content-articles-gallery-context">
         <div class="main-content-articles-gallery-context-content">
@@ -53,9 +53,6 @@
     </div>
     <!-- Appplication COMPONENT  -->
     <div class="main-content-articles-application">
-      <div class="main-content-articles-application-heading">
-        <app-typographical-headings [title]="createTitle('')"></app-typographical-headings>
-      </div>
       <div class="main-content-articles-application-context">
         <div class="main-content-articles-application-context-content">
           <app-application></app-application>

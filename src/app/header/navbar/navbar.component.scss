@@ -1,9 +1,8 @@
 @import '../../app.component.scss';
 
 .navbar {
-    // border: 2px solid red;
-    box-shadow: 4px 1px 12px 2px rgba(25, 42, 194, 0.8274509804);
     padding: 0rem 2rem !important;
+    background: #3e0c15f7 !important;
 
     &-brand {
         width: 82%;
@@ -19,8 +18,8 @@
         font-weight: 400;
 
         .nav-link {
-            color: #000;
-            @include hover-color(#000);
+            color: #fdc52c;
+            @include hover-color(#fdc52c);
             transition: ease-in-out 200ms;
         }
 

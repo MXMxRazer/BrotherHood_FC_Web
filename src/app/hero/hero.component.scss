@@ -1,5 +1,6 @@
 .super-hero-container {
     overflow: hidden;
+    background: linear-gradient(#3e0c15f7, 80%, #fff);
 
     .hero-container {
         margin: 4rem auto 4rem auto;
@@ -9,6 +10,7 @@
         img {
             -webkit-animation: mover 1s infinite alternate;
             animation: mover 1s infinite alternate;
+            border-radius: 50%;
         }
 
         h1 {
@@ -21,8 +23,13 @@
 
         }
 
+        p {
+            color: #dec88e;
+        }
+
         .btn-primary {
             background-color: #3e0c15f7;
+            border: none;
             color: #fdc52c;
         }
 

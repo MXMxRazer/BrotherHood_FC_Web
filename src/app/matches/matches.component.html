@@ -1,1 +1,101 @@
-<h2>here</h2>
+<div class="match-section">
+    <mat-card class="match-card prev">
+        <mat-card-header>
+            <div mat-card-avatar class="date">
+                <span id="date-date">
+                    {{ prevMatch.date }}
+                </span>
+                <span id="date-day">
+                    {{ prevMatch.day }}
+                </span>
+            </div>
+            <div mat-card-avatar class="time">
+                <span>
+                    {{ prevMatch.occurence }}
+                </span>
+            </div>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="home-team">
+                <h3>Home</h3>
+                <img src="../../assets/head_logo.jpg" alt="">
+                <h2>{{ prevMatch.homeTeam }}</h2>
+            </div>
+            <h1 id="vs">VS</h1>
+            <div class="away-team">
+                <h3>Away</h3>
+                <img src="../../assets/head_logo.jpg" alt="">
+                <h2>{{ prevMatch.awayTeam }}</h2>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+
+    <!-- ----------------- -->
+    <mat-card class="match-card current">
+        <mat-card-header>
+            <div mat-card-avatar class="date">
+                <span id="date-date">
+                    {{currMatch.date}}
+                </span>
+                <span id="date-day">
+                    {{currMatch.day}}
+                </span>
+            </div>
+            <div mat-card-avatar class="time">
+                <span>
+                    {{currMatch.occurence}}
+                </span>
+            </div>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="home-team">
+                <h3>Home</h3>
+                <img src="../../assets/head_logo.jpg" alt="">
+                <h2>
+                    {{currMatch.homeTeam}}</h2>
+            </div>
+            <h1 id="vs">VS</h1>
+            <div class="away-team">
+                <h3>Away</h3>
+                <img src="../../assets/head_logo.jpg" alt="">
+                <h2>
+                    {{currMatch.awayTeam}}</h2>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <!-- ----------------- -->
+    <mat-card class="match-card next">
+        <mat-card-header>
+            <div mat-card-avatar class="date">
+                <span id="date-date">
+                    {{nextMatch.date}}
+                </span>
+                <span id="date-day">
+                    {{nextMatch.day}}
+                </span>
+            </div>
+            <div mat-card-avatar class="time">
+                <span>
+                    NEXT
+                </span>
+            </div>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="home-team">
+                <h3>Home</h3>
+                <img src="../../assets/head_logo.jpg" alt="">
+                <h2>
+                    {{nextMatch.homeTeam}}</h2>
+            </div>
+            <h1 id="vs">VS</h1>
+            <div class="away-team">
+                <h3>Away</h3>
+                <img src="../../assets/head_logo.jpg" alt="">
+                <h2>
+                    {{nextMatch.awayTeam}}</h2>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

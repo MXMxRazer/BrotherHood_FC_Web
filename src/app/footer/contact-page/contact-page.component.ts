@@ -7,10 +7,8 @@ import { FormType } from './contact_form_type/FormType.type';
 
 @Component({
   selector: 'app-contact-page',
-  standalone: true,
   templateUrl: './contact-page.component.html',
   styleUrls: ['./contact-page.component.scss'],
-  imports: [HttpClientModule, ReactiveFormsModule],
 })
 export class ContactPageComponent implements OnInit {
   url: string = 'http://localhost:8080/send-mail-demo';

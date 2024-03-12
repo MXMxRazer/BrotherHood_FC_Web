@@ -6,6 +6,7 @@ $button-clr: #eee;
     padding-top: 0.2rem !important;
     overflow: hidden;
     display: flex;
+    flex-wrap: nowrap;
     background-color: #3e0c15f7;
     margin: auto;
 
@@ -70,14 +71,14 @@ $button-clr: #eee;
     }
 
     &-img-section {
-        transform: translateY(6%);
+        transform: translate(-12%, 4%);
+        width: 80%;
         box-shadow: -7px -6px 13px -3px rgba(0, 0, 0, 0.6) !important;
         border-radius: 1rem !important;
         border-top-right-radius: 0rem !important;
 
         &-blog {
             border-radius: inherit;
-            ;
         }
     }
 

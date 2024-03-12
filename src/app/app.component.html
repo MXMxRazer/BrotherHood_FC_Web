@@ -4,11 +4,12 @@
 </header>
 <main>
   <app-hero></app-hero>
-  <section class="matches">
-    <app-matches></app-matches>
-  </section>
   <section class="status-board">
     <app-status-board></app-status-board>
+  </section>
+  <section class="matches">
+    <app-typographical-headings [title]="createTitle('Upcoming Matches')" [specialHeading]="true" />
+    <app-matches></app-matches>
   </section>
   <section class="content-info-section">
     <app-main></app-main>

@@ -1,5 +1,9 @@
-<h1 class="heading-blogs display-5 fw-bold" [ngStyle]="{'font-size': fontSize + 'rem', 'text-align': alignText}">
-    <span>
-        {{title}}
-    </span>
+<h1 *ngIf="!specialHeading" class="heading-blogs display-5 fw-bold"
+    [ngStyle]="{'font-size': fontSize + 'rem', 'text-align': alignText}">
+    {{title}}
+</h1>
+
+<!-- ////// Heading For Matches (Special / Stylish) //////// -->
+<h1 *ngIf="specialHeading" class="heading-special">
+    {{title}}
 </h1>

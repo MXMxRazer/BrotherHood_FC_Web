@@ -1,4 +1,4 @@
-import { Injectable, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -31,6 +31,9 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { ResponsiveComponentComponent } from './responsive-component/responsive-component.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatchesComponent } from './matches/matches.component';
+import { CopyrightComponent } from './footer/copyright/copyright.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -52,9 +55,10 @@ import { MatchesComponent } from './matches/matches.component';
     ResponsiveComponentComponent,
     CarouselComponent,
     MatchesComponent,
+    CopyrightComponent,
+    ContactPageComponent,
   ],
   imports: [
-    ContactPageComponent,
     MinorBlogsComponent,
     BrowserModule,
     AppRoutingModule,
@@ -65,6 +69,9 @@ import { MatchesComponent } from './matches/matches.component';
     MatDialogModule,
     MatStepperModule,
     MatExpansionModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatDialogModule,
   ],
   providers: [
     Logger,

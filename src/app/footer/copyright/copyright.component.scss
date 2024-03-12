@@ -1,0 +1,27 @@
+@import '../../app.component.scss';
+
+$accept-btn-clr: #00B4D8;
+$decline-btn-clr: #FFC600;
+
+.notice-bar {
+    transform: rotateX(180deg);
+
+    &-content {
+        background-color: #222;
+        color: #fff;
+        font-weight: 500;
+        display: flex;
+        gap: 1rem;
+        padding: 0.1rem;
+        justify-content: center;
+
+        &-text {
+            margin: 0 !important;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+}

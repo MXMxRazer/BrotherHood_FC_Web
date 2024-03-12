@@ -4,16 +4,18 @@ $indentation: 0rem 2rem;
 
 .main-content {
     overflow-x: hidden;
-    padding: $indentation;
 
     &-articles {
         &-blog {
+            background: linear-gradient(black, brown);
+
             &-context {
                 padding: $indentation;
             }
         }
 
         &-achievement {
+            background: rgb(64, 1, 1);
 
             .divider {
                 &-content {
@@ -47,24 +49,45 @@ $indentation: 0rem 2rem;
         }
 
         &-gallery {
+            display: flex;
+            padding: 4em 0em;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 80%;
+            margin: auto;
+            transform: translateX(4%);
+            gap: 4em;
+
+            &-heading {
+                padding: 0 !important;
+            }
+
             &-context {
+                width: 100%;
                 @include spread-around();
+                left: 0 !important;
             }
         }
 
 
         &-members {
-
+            padding: 0em 3em 2em 4em;
+            background: linear-gradient(black, brown);
 
             &-context {
                 @include spread-around();
-                background: linear-gradient(0deg, #3e0c15f7 35%, #641422f7 100%);
+                // background: linear-gradient(0deg, #3e0c15f7 35%, #641422f7 100%);
 
                 &-inner-context {
                     width: 78%;
                     margin: auto;
                 }
             }
+        }
+
+        &-application {
+            margin-top: 2em;
         }
     }
 
