@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Logger } from '../../logger/logger';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { FormControl, FormGroup } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
 import { FormType } from './contact_form_type/FormType.type';
 
 @Component({
@@ -28,11 +27,15 @@ export class ContactPageComponent implements OnInit {
   onFormSubmit(form: FormGroup): void {
     if (form.valid) {
       this.http
-        .post<FormType>('http://localhost:8080/send-mail', {
-          to: 'tamrakar@sheridancollege.ca',
-          subject: 'fromAngular',
-          message: form.value.first_name + ' ' + form.value.last_name,
-        })
+        .post(
+          'http://localhost:8080/send-mail',
+          {
+            to: 'tamrakar@sheridancollege.ca',
+            subject: 'fromAngular',
+            message: form.value.first_name + ' ' + form.value.last_name,
+          },
+          { responseType: 'text' }
+        )
         .subscribe((data) => {
           console.log(data);
         });
