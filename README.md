@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Welcome to the FC Northen Yetis Web Application repository! This project is dedicated to developing a web application for "Brotherhood FC," a registered club located in Brampton, ON, Canada. The club aims to represent and assist the Nepalese community in Canada, with a primary focus on achieving championship titles in the field of football (soccer).
+Welcome to the FC Northen Yetis Web Application repository! This project is dedicated to developing a web application for "FC Northern Yetis", a registered club located in Brampton, ON, Canada. The club aims to represent and assist the Nepalese community in Canada, with a primary focus on achieving championship titles in the field of football (soccer).
 
 ## Project Details
 
@@ -19,11 +19,11 @@ Welcome to the FC Northen Yetis Web Application repository! This project is dedi
 
 ## Project Description
 
-The Brotherhood FC Web Application is designed to serve the needs of the club and its community. The web application is being developed with Angular for the frontend, Spring for the backend, MySQL for database management, and AWS for cloud services.
+The FC Web Application is designed to serve the needs of the club and its community. The web application is being developed with Angular for the frontend, Spring for the backend, MySQL for database management, and AWS for cloud services.
 
 ## Major Features
 
-- **Club Information:** Detailed information about Brotherhood FC, its mission, and its role in the Nepalese community in Canada.
+- **Club Information:** Detailed information about FC Northern Yetis, its mission, and its role in the Nepalese community in Canada.
 - **Championship Goals:** A section dedicated to the club's primary goal of achieving championship titles in football.
 - **Angular CLI Version:** The project was generated with Angular CLI version 16.2.9.
 
@@ -33,7 +33,7 @@ The project structure follows best practices for Angular applications. The front
 
 ## How to Contribute
 
-We welcome contributions from the community to enhance and improve the Brotherhood FC Web Application. If you'd like to contribute, please follow the guidelines outlined in the `CONTRIBUTING.md` file.
+We welcome contributions from the community to enhance and improve the FC Northern Yetis Web Application. If you'd like to contribute, please follow the guidelines outlined in the `CONTRIBUTING.md` file.
 
 ## Getting Started
 
@@ -47,6 +47,6 @@ To get started with the project, follow the steps below:
 
 The project is currently in progress, focusing on the development of the desktop version. Ongoing updates and information will be added to the project as development continues.
 
-Thank you for your interest in the Brotherhood FC Web Application! We look forward to the positive impact this project will have on the Nepalese community in Canada.
+Thank you for your interest in th FC Northern Yetis Web Application! We look forward to the positive impact this project will have on the Nepalese community in Canada.
 
 *Note: Information in this README.md is subject to change as the project progresses.*
