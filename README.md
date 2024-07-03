@@ -1,4 +1,4 @@
-# Brotherhood FC Web Application
+# FC Northern Yetis Web Application
 
 ## Project Overview
 
