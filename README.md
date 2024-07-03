@@ -7,8 +7,8 @@ Welcome to the FC Northen Yetis Web Application repository! This project is dedi
 ## Project Details
 
 - **Project Status:** In Progress (Desktop Version)
-- **Project Started:** November 2023
-- **Expected Deadline:** December 2023
+- **Project Started:** March 2024
+- **Expected Deadline:** Junly 2024
 
 ## Technologies Used
 
