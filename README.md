@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Welcome to the Brotherhood FC Web Application repository! This project is dedicated to developing a web application for "Brotherhood FC," a registered club located in Brampton, ON, Canada. The club aims to represent and assist the Nepalese community in Canada, with a primary focus on achieving championship titles in the field of football (soccer).
+Welcome to the FC Northen Yetis Web Application repository! This project is dedicated to developing a web application for "Brotherhood FC," a registered club located in Brampton, ON, Canada. The club aims to represent and assist the Nepalese community in Canada, with a primary focus on achieving championship titles in the field of football (soccer).
 
 ## Project Details
 
