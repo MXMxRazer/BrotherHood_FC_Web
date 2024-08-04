@@ -40,3 +40,8 @@
 * {
     box-sizing: border-box;
 }
+
+.color-fade {
+    background: linear-gradient(to bottom, #3e0c15f7 40%, #fff);
+    padding: 2em; 
+}
