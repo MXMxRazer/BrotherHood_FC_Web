@@ -1,20 +1,30 @@
 <div class="gallery-sub-container">
-    <div class="gallery-super-container-image-section">
-        <app-carousel [slides]="slides"></app-carousel>
+    <div class="content-section">
+        <div class="content-section-title gallery-sub-container-title">
+            Gallery
+        </div>
+        <div class="content-section-contents">
+            <h1>SOME THINGS TO WRITE ABOUT GALLERY</h1>
+        </div>
     </div>
-    <div class="gallery-expansion-panel">
-        <mat-accordion class="gallery-expansion-panel-accordian" multi>
-            <mat-expansion-panel>
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        Photos
-                    </mat-panel-title>
-                </mat-expansion-panel-header>
-                <div class="image-container">
-                    <img *ngFor="let slide of slides" [src]="slide.url" alt="No Image Found!"
-                        (click)="openDialog('300ms', '300ms')">
-                </div>
-            </mat-expansion-panel>
-        </mat-accordion>
+    <div class="gallery-viewer">
+        <div class="gallery-super-container-image-section">
+            <app-carousel [slides]="slides"></app-carousel>
+        </div>
+        <div class="gallery-expansion-panel">
+            <mat-accordion class="gallery-expansion-panel-accordian" multi>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Photos
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="image-container">
+                        <img *ngFor="let slide of slides" [src]="slide.url" alt="No Image Found!"
+                            (click)="openDialog('300ms', '300ms')">
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
     </div>
 </div>

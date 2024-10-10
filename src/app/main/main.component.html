@@ -1,67 +1,66 @@
-<div class="main-content">
-  <div class="main-content-articles">
-    <!-- BLOG COMPONENT -->
-    <div class="main-content-articles-blog">
-      <div class="main-content-articles-blog-heading">
-        <app-typographical-headings [title]="createTitle('Blogs')"></app-typographical-headings>
-      </div>
-      <div class="main-content-articles-blog-context">
-        <div class="main-content-articles-blog-context-major-blog">
-          <app-blog></app-blog>
+<div class="super-content">
+  <div class="main-content">
+    <div class="main-content-articles">
+      <!-- BLOG COMPONENT -->
+      <div class="main-content-articles-blog">
+        <div class="main-content-articles-blog-heading">
+          <app-typographical-headings [title]="createTitle('Blogs')"></app-typographical-headings>
         </div>
-        <div class="main-content-articles-blog-context-minor-blog">
-          <app-minor-blogs></app-minor-blogs>
-        </div>
-      </div>
-    </div>
-    <!-- GALLERY COMPONENT -->
-    <div class="main-content-articles-gallery">
-      <div class="main-content-articles-gallery-heading">
-        <app-typographical-headings [title]="createTitle('Gallery')"></app-typographical-headings>
-      </div>
-      <div class="main-content-articles-gallery-context">
-        <div class="main-content-articles-gallery-context-content">
-          <app-gallery></app-gallery>
-          <!-- GALLERY COMPONENT INSERT HERE -->
-        </div>
-      </div>
-    </div>
-    <!-- ACHIEVEMENTS COMPONENT -->
-    <div class="main-content-articles-achievement">
-      <div class="main-content-articles-achievement-heading">
-        <app-typographical-headings [title]="createTitle('Achievements')"></app-typographical-headings>
-      </div>
-      <div class="main-content-articles-achievement-context">
-        <div class="main-content-articles-achievement-context-content">
-          <app-achievements></app-achievements>
-          <div class="main-content-articles-achievement-context-sub-achievement">
-            <app-sub-achievements></app-sub-achievements>
+        <div class="main-content-articles-blog-context">
+          <div class="main-content-articles-blog-context-major-blog">
+            <app-blog></app-blog>
+          </div>
+          <div class="main-content-articles-blog-context-minor-blog">
+            <app-minor-blogs></app-minor-blogs>
           </div>
         </div>
       </div>
-    </div>
-    <!-- MEMBERS COMPONENT -->
-    <div class="main-content-articles-members">
-      <div class="main-content-articles-members-heading">
-        <app-typographical-headings [title]="createTitle('Team Members')"></app-typographical-headings>
-      </div>
-      <div class="main-content-articles-members-context">
-        <div class="main-content-articles-members-context-inner-context">
-          <app-members></app-members>
+      <!-- GALLERY COMPONENT -->
+      <div class="main-content-articles-gallery">
+        <div class="main-content-articles-gallery-context">
+          <div class="main-content-articles-gallery-context-content">
+            <app-gallery></app-gallery>
+            <!-- GALLERY COMPONENT INSERT HERE -->
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Appplication COMPONENT  -->
-    <div class="main-content-articles-application">
-      <div class="main-content-articles-application-heading">
-        <app-typographical-headings [title]="createTitle('')"></app-typographical-headings>
-      </div> 
-      <div class="main-content-articles-application-context">
-        <div class="main-content-articles-application-context-content">
-          <app-application></app-application>
-          <!-- <div class="main-content-articles-achievement-context-sub-achievement">
+      <!-- ACHIEVEMENTS COMPONENT -->
+      <div class="main-content-articles-achievement">
+        <div class="main-content-articles-achievement-heading">
+          <app-typographical-headings [title]="createTitle('Achievements')"></app-typographical-headings>
+        </div>
+        <div class="main-content-articles-achievement-context">
+          <div class="main-content-articles-achievement-context-content">
+            <app-achievements></app-achievements>
+            <div class="main-content-articles-achievement-context-sub-achievement">
+              <app-sub-achievements></app-sub-achievements>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MEMBERS COMPONENT -->
+      <div class="main-content-articles-members">
+        <div class="main-content-articles-members-heading">
+          <app-typographical-headings [title]="createTitle('Team Members')"></app-typographical-headings>
+        </div>
+        <div class="main-content-articles-members-context">
+          <div class="main-content-articles-members-context-inner-context">
+            <app-members></app-members>
+          </div>
+        </div>
+      </div>
+      <!-- Appplication COMPONENT  -->
+      <div class="main-content-articles-application">
+        <div class="main-content-articles-application-heading">
+          <app-typographical-headings [title]="createTitle('')"></app-typographical-headings>
+        </div>
+        <div class="main-content-articles-application-context">
+          <div class="main-content-articles-application-context-content">
+            <app-application></app-application>
+            <!-- <div class="main-content-articles-achievement-context-sub-achievement">
             <app-sub-achievements></app-sub-achievements>
           </div> -->
+          </div>
         </div>
       </div>
     </div>

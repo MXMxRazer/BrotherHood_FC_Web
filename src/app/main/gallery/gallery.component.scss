@@ -1,42 +1,68 @@
 .gallery-sub-container {
     height: 100%;
-    width: 48%;
+    width: 74%;
     transform: scaleX(1.12);
     padding: 2em;
     margin: auto;
     border-radius: 0.8em;
+    display: flex;
+    gap: 2em;
 
-    .gallery-expansion-panel {
-        box-shadow: 1em 2.2em 0.2em rgba(0, 0, 0, 0.5);
+    .content-section {
+        width: 50%; 
+        height: 80%;
+        margin: auto;
 
-        &-accordian {
+        &-title {
+            margin-bottom: 2em;
+            font-size: 5em; 
+            font-family: sans-serif;
+            text-align: center; 
+        }
 
-            mat-expansion-panel {
-                background-color: #eee !important;
-                border-radius: 0.8em;
+        &-contents {
+            border-top-left-radius: 1em;
+            border-bottom-right-radius: 1em;
+            border: 2px solid red; 
+            background: #666; 
+        }
+    }
 
-                mat-panel-description,
-                mat-panel-title {
-                    color: #2f2f2f;
-                    font-size: 1.4em;
-                    transform: scaleX(0.8) !important;
-                    justify-content: center;
-                    position: relative;
-                    left: 1em;
-                }
+    .gallery-viewer {
+        width: 50%;
 
-                .image-container {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    gap: 1.2em;
+        .gallery-expansion-panel {
+            box-shadow: 1em 2.2em 0.2em rgba(0, 0, 0, 0.5);
 
-                    img {
-                        cursor: pointer;
-                        width: 100%;
-                        border-radius: 0.8em;
+            &-accordian {
 
-                        &:hover {
-                            opacity: 0.8;
+                mat-expansion-panel {
+                    background-color: #eee !important;
+                    border-radius: 0.8em;
+
+                    mat-panel-description,
+                    mat-panel-title {
+                        color: #2f2f2f;
+                        font-size: 1.4em;
+                        transform: scaleX(0.8) !important;
+                        justify-content: center;
+                        position: relative;
+                        left: 1em;
+                    }
+
+                    .image-container {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        gap: 1.2em;
+
+                        img {
+                            cursor: pointer;
+                            width: 100%;
+                            border-radius: 0.8em;
+
+                            &:hover {
+                                opacity: 0.8;
+                            }
                         }
                     }
                 }
