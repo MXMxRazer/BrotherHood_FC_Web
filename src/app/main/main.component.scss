@@ -4,7 +4,7 @@ $indentation: 0rem 2rem;
 
 .super-content {
     overflow-x: hidden;
-    background: #fff; 
+    background: darken($secondary-clr, 18%); 
 }
 
 .main-content {
@@ -19,39 +19,29 @@ $indentation: 0rem 2rem;
         }
 
         &-achievement {
-
-            .divider {
-                &-content {
-                    position: relative;
-                    border: 3px solid white;
-                }
-            }
+            position: relative;
 
             &-context {
-                @include spread-around();
-
-                &-content {
-                    width: 60%;
-                    margin: auto;
-                    position: relative; 
-                    left: -2%; 
-                    border: none;
-                    border-radius: 1.4rem;
-                    transform: translateX(0.5%);
-
-                    &:nth-child(1) {
-                        padding: 0 !important;
-                    }
-                }
-
-                &-sub-achievement {
-                    @include spread-around();
-                    padding: 0em 2em;
+                position: relative; 
+                left: -5%; 
+                width: 106%;
+                &-content { 
+                    margin-top: 2em;
                 }
             }
         }
 
         &-gallery {
+            background: #222;
+            margin: 0 !important; 
+            position: relative; 
+            width: 110vw;
+            left: -4%;
+            padding-left: 10em;
+            padding-right: 10em; 
+            padding-top: 2em; 
+            padding-bottom: 2em;      
+
             &-context {
                 @include spread-around();
             }
@@ -59,10 +49,17 @@ $indentation: 0rem 2rem;
 
 
         &-members {
-
+            background: #111;
+            margin: 1em 0em !important; 
+            position: relative; 
+            width: 110vw;
+            left: -4%;
+            padding-left: 10em;
+            padding-right: 10em; 
+            padding-top: 2em; 
+            padding-bottom: 2em;    
 
             &-context {
-                @include spread-around();
 
                 &-inner-context {
                     width: 78%;

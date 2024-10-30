@@ -1,132 +1,75 @@
+@import '../../app.component.scss'; 
+
 $color_1: #fff;
 $font-family_1: Montserrat;
 
 @import "https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap";
 
-.row {
-    justify-content: center;
-    gap: 1.72rem;
-}
+.super-container {
+    position: relative; 
+    border-radius: 2em;
+    margin-top: auto; 
+    background: linear-gradient(to left, darken($secondary-clr, 18%) 0%, darken($primary-clr, 3%) 90%);
+    padding: 4em; 
+    margin: auto;
 
-.container {
-    margin-bottom: 2rem;
-    padding-top: 2rem;
-
-    .card-icon {
+    .title-container {
+        background-color: darken($primary-clr, 1%);
+        border-radius: 4em;
         width: 100%;
-
-        &-img {
-            width: inherit;
-            padding-inline: 5.8rem;
-        }
-    }
-
-    .card-circle {
-        margin: 4.8rem 0rem;
-        text-align: center;
-        background: linear-gradient(0deg, #3e0c15f7 42%, #fdc52c 100%);
-        box-shadow: 5px 5px 8px 5px #bb8c0c;
-        border: none;
-        color: $color_1;
         font-family: $font-family_1;
-        padding: 2.8rem;
-        border-radius: 50%;
-        transition: all ease-in-out 0.4s;
-        transform: scale(1.14);
-
-        .card-body {
-            width: 100%;
-        }
-
-        .card-title {
-            font-weight: 600;
-            font-size: 26px;
-        }
-
-        .card-text {
-            font-weight: 400;
-            margin-top: 0.8rem;
-            font-size: 1rem;
-        }
-
-        &:nth-child(1) {
-            position: relative;
-            left: 1%;
-        }
-
-        &:nth-child(2) {
-            background: linear-gradient(0deg, #3e0c15f7 42%, #fdc52c 100%);
-            transform: scale(1.34);
-            margin-right: 1rem;
-            margin-left: 1rem;
-            position: relative;
-            left: 1%;
-        }
-
-        .btn {
-            font-family: $font-family_1;
-            background: transparent;
-            border: 1px solid #fff;
-            text-transform: uppercase;
-            padding: 5px 30px;
-            border-radius: 0px;
-            font-weight: 600;
-            transition: all ease-in-out 0.2s;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        &:hover {
-            border: 0.2rem solid #fdc52c;
+        text-align: center; 
+        margin-bottom: 2.2em;  
+        &-title {
+            color: $primary-txt-clr;
+            font-size: 4em; 
+            font-weight: bolder;
+            text-shadow: 4px 4px 12px rgb(0, 0, 0);
         }
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    .card-circle {
-        &:nth-child(3) {
-            z-index: 0;
-        }
+.item1 { grid-area: pos_1; }
+.item2 { grid-area: pos_3; }
+.item3 { 
+    grid-area: pos_4;
+    height: 60%;
+    align-self: center;
+}
+.item4 { 
+    grid-area: pos_6;
+    height: 60%;
+    align-self: center;
+}
+.item5 { grid-area: pos_7; }
+.item6 { grid-area: pos_9; }
 
-        width: 25rem;
-        height: 25rem;
 
-        &:nth-child(2) {
-            box-shadow: 1px 2px 20px 8px rgba(241, 235, 235, 0.12);
-            transform: scale(1.2);
-            z-index: 1;
-        }
-
-        .card-icon {
-            i {
-                margin-top: 20px;
-            }
-        }
-    }
+section .super-container .grid-container .center { 
+    width: 80% !important;
+    border-radius: 50%; 
+    margin: auto; 
+    grid-area: pos_5;
+    border: 4px solid black; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8) !important; 
+    z-index: 1;
+    position: relative;
 }
 
-@media only screen and (min-width: 991px) and (max-width: 1200px) {
-    .card-circle {
-        width: 340px;
-        height: 340px;
+.grid-container {
+    display: grid; 
+    grid-template-areas: 
+        'pos_1 pos_2 pos_3'
+        'pos_4 pos_5 pos_6'
+        'pos_7 pos_8 pos_9';
+    gap: 4em; 
+    justify-items: center;
+}
 
-        .card-icon {
-            i {
-                font-size: 50px;
-                margin-top: -25px;
-            }
-        }
-
-        &:nth-child(3) {
-            margin-left: -50px;
-            z-index: 0;
-        }
-
-        &:nth-child(2) {
-            margin-left: -20px;
-            z-index: 1;
-        }
-    }
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    width: 24vw;
+    padding: 2em; 
 }

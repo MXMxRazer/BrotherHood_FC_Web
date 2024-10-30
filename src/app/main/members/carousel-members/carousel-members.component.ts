@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { SlideInterface } from './types/slide.interface.types';
 import {
   animate,
   style,
@@ -8,9 +7,9 @@ import {
 } from '@angular/animations';
 
 @Component({
-  selector: 'app-carousel',
-  templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss'],
+  selector: 'app-carousel-member',
+  templateUrl: './carousel-members.component.html',
+  styleUrls: ['./carousel-members.component.scss'],
   animations: [
     trigger('carouselAnimation', [
       transition(':increment', [
@@ -24,8 +23,8 @@ import {
     ]),
   ],
 })
-export class CarouselComponent {
-  @Input() slides: SlideInterface[] = [];
+export class CarouselMemberComponent {
+  @Input() slides: any[] = [];
   slide = [
     'https://via.placeholder.com/800x400/FF5733/ffffff',
     'https://via.placeholder.com/800x400/33FF57/ffffff',

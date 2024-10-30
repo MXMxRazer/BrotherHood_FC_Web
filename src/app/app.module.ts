@@ -10,11 +10,9 @@ import { HeroComponent } from './hero/hero.component';
 import { StatusBoardComponent } from './main/status-board/status-board.component';
 import { BlogComponent } from './main/blog/blog.component';
 import { MainComponent } from './main/main.component';
-import { TypographicalHeadingsComponent } from './typographical-headings/typographical-headings.component';
 import { MinorBlogsComponent } from './main/minor-blogs/minor-blogs.component';
 import { BlogContentComponent } from './main/blog-content/blog-content.component';
 import { AchievementsComponent } from './main/achievements/achievements.component';
-import { SubAchievementsComponent } from './main/achievements/sub-achievements/sub-achievements.component';
 import { MembersComponent } from './main/members/members.component';
 import { ContactPageComponent } from './footer/contact-page/contact-page.component';
 import { FooterComponent } from './footer/footer.component';
@@ -31,6 +29,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { ResponsiveComponentComponent } from './responsive-component/responsive-component.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatchesComponent } from './matches/matches.component';
+import { CarouselMemberComponent } from './main/members/carousel-members/carousel-members.component';
 
 @NgModule({
   declarations: [
@@ -42,16 +41,15 @@ import { MatchesComponent } from './matches/matches.component';
     StatusBoardComponent,
     BlogComponent,
     MainComponent,
-    TypographicalHeadingsComponent,
     BlogContentComponent,
     AchievementsComponent,
-    SubAchievementsComponent,
     MembersComponent,
     FooterComponent,
     GalleryComponent,
     ResponsiveComponentComponent,
     CarouselComponent,
     MatchesComponent,
+    CarouselMemberComponent
   ],
   imports: [
     ContactPageComponent,

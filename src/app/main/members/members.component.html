@@ -1,19 +1,22 @@
-<div class="box-container">
-    <div class="box" *ngFor="let member of memberList">
-        <div class="body">
-            <div class="imgContainer">
-                <img src="https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    alt="">
-                <div class="title-name-container">
-                    <h5 class="title-name-container-context">{{member.position}}</h5>
+<section class="members-component">
+    <app-carousel-member></app-carousel-member>
+    <div class="box-container">
+        <div class="box" *ngFor="let member of memberList">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="">
+                    <div class="title-name-container">
+                        <h5 class="title-name-container-context">{{member.position}}</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="content d-flex flex-column align-items-center justify-content-center">
-                <div>
-                    <h3 class="text-white fs-5">{{member.name}}</h3>
-                    <p class="fs-6 text-white">{{member.context}}</p>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">{{member.name}}</h3>
+                        <p class="fs-6 text-white">{{member.context}}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>

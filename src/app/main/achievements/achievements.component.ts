@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./achievements.component.scss']
 })
 export class AchievementsComponent {
-
+  
 }

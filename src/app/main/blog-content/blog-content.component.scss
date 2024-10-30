@@ -1,11 +1,24 @@
+@import '../../app.component.scss';
+
 .blog-content-container {
-    background-color: #3e0c15f7;
+    background-color: $primary-clr;
     height: 90vh;
     padding: 2em;
 
     .author {
-        color: #666;
+        color: $secondary-clr;
         font-weight: bold;
         font-size: 1.2em;
+    }
+
+    .blog-post {
+        color: #fff; 
+
+        &-title {
+            color: $primary-txt-clr; 
+        }
+        &-meta {
+            color: darken(#fff, 20%); 
+        }
     }
 }

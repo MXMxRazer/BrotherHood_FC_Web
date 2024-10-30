@@ -1,3 +1,7 @@
+$primary-clr: #031030;
+$primary-txt-clr: #dee3aedb;
+$secondary-clr: #c42c37; 
+
 @mixin hover-color-bg-darken($clr) {
     &:hover {
         background-color: darken($clr, 10%);
@@ -34,7 +38,7 @@
 @mixin spread-around() {
     width: 120%;
     position: relative;
-    left: -10%;
+    left: -10%; 
 }
 
 * {
@@ -42,6 +46,6 @@
 }
 
 .color-fade {
-    background: linear-gradient(to bottom, #3e0c15f7 40%, #fff);
+    background: linear-gradient(to bottom, $primary-clr 50%, darken($secondary-clr, 18%));
     padding: 2em; 
 }

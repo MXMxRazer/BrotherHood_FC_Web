@@ -1,14 +1,18 @@
+@import '../../app.component.scss'; 
+
 .container-minor-blogs {
     width: 98%;
     margin: auto;
 
     .content-box {
         cursor: pointer;
-        background-color: #3e0c15f7;
+        background-color: darken($secondary-clr, 30%);
+        border-radius: 2em; 
+        border: none; 
 
         strong {
             font-size: 1.4em;
-            color: #fdc52c !important;
+            color: $primary-txt-clr !important;
         }
 
         h3 {
@@ -28,6 +32,11 @@
         button {
             color: #cb9708;
         }
+    }
+
+    .rounded-left {
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
     }
 
 }

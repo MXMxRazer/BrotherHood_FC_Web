@@ -8,7 +8,8 @@ import { PhotoDialog } from './photo-dialog/photo.dialog.component';
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss'],
 })
-export class GalleryComponent {
+export class GalleryComponent{
+
   slides: SlideInterface[] = [
     {
       url: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg',

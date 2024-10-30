@@ -1,3 +1,5 @@
+@import '../../app.component.scss';
+
 .container {
     margin: 1rem auto;
 
@@ -6,11 +8,11 @@
         padding: 2rem 2.2rem;
         width: 80%;
         margin: auto;
-        background-color: #3e0c15f7;
+        background-color: $primary-clr;
 
         &-col {
             font-size: 2.8rem !important;
-            color: #fdc52c;
+            color: $primary-txt-clr;
             font-weight: bolder;
             display: flex;
             flex-direction: column;

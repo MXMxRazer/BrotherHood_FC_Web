@@ -1,0 +1,22 @@
+<aside class="carousel">
+    <div class="slide-container" [@carouselAnimation]="currentIndex">
+        <div class="silde-container-body">
+            <div class="slide-container-body-content-section content-section">
+                <div class="slide-container-body-content-section-text text-area">
+                    <div class="text-area-title">
+                        <h2>FirstName LastName</h2>
+                        <i>CMD</i>
+                    </div>
+                    <div class="text-area-description">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos neque quidem commodi praesentium laborum saepe suscipit ipsam animi laudantium ad, beatae minus fugit fugiat illum earum vel quisquam nulla. Cum?</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container-body-image-section image-section">
+                <img src="../../../../assets/blog_main.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div (click)="goToPrevious()" class="arrow left-arrow">❰</div>
+    <div (click)="goToNext()" class="arrow right-arrow">❱</div>
+</aside>

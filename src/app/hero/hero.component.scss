@@ -1,3 +1,5 @@
+@import '../app.component.scss'; 
+
 .super-hero-container {
     overflow: hidden;
 
@@ -13,7 +15,7 @@
 
         h1 {
             font-size: 4.2em;
-            color: #fdc52c;
+            color: $primary-txt-clr;
 
             h2 {
                 font-size: 0.6em;
@@ -22,12 +24,13 @@
         }
 
         .lead {
-            color: #fdc52c8d; 
+            color: darken(#f7fbcf, 60%); 
         }
 
         .btn-primary {
-            background-color: #3e0c15f7;
-            color: #fdc52c;
+            background-color: darken($secondary-clr, 18%);
+            color: #fff;
+            border: none; 
         }
 
     }

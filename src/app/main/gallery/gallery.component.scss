@@ -1,8 +1,12 @@
+@import '../../app.component.scss'; 
+
 .gallery-sub-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #111;  
     height: 100%;
-    width: 74%;
-    transform: scaleX(1.12);
     padding: 2em;
+    padding-top: 3em; 
     margin: auto;
     border-radius: 0.8em;
     display: flex;
@@ -14,22 +18,28 @@
         margin: auto;
 
         &-title {
-            margin-bottom: 2em;
+            margin-bottom: 0.8em;
             font-size: 5em; 
-            font-family: sans-serif;
+            font-family: cursive;
             text-align: center; 
+            color: $primary-txt-clr;
+            letter-spacing: 8px; 
         }
 
         &-contents {
+            margin: auto; 
+            width: 70%;
+            text-align: center;
             border-top-left-radius: 1em;
             border-bottom-right-radius: 1em;
-            border: 2px solid red; 
-            background: #666; 
+            background: #eee;
+            padding: 0.8em;  
         }
     }
 
     .gallery-viewer {
         width: 50%;
+        margin: auto; 
 
         .gallery-expansion-panel {
             box-shadow: 1em 2.2em 0.2em rgba(0, 0, 0, 0.5);
@@ -68,5 +78,29 @@
                 }
             }
         }
+    }
+}
+
+.star {
+    position: absolute;
+    background: radial-gradient(circle, #aaa, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    left: 30%;
+    width: 30%; 
+    animation: shine 3s infinite alternate;
+
+    #camera {
+        width: 8%; 
+    }
+}
+
+@keyframes shine {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 1;
     }
 }
