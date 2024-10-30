@@ -3,14 +3,14 @@
     <mat-card class="application-super-sub">
         <mat-card-header class="application-super-sub-header">
             <mat-card-title>Apply for Membership</mat-card-title>
-            <mat-card-subtitle>Some subtitle here</mat-card-subtitle>
+            <mat-card-subtitle>Engage in the vibrant wonders of Nepalese community based in GTA.</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content class="application-super-sub-content">
-            <div class="application-super-sub-content-container" *ngFor="let ele of [1, 2]; index as i;">
-                <mat-card class="{{'application-super-sub-content-container-type-' + ele}}">
+            <div class="application-super-sub-content-container">
+                <mat-card class="{{'application-super-sub-content-container-type'}}">
                     <mat-card-header>
                         <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
-                        <mat-card-title>Free Tier --\> INDEX {{ ele }}</mat-card-title>
+                        <mat-card-title>Community Member</mat-card-title>
                     </mat-card-header>
                     <mat-card-content class="container-card-content">
                         <div class="container-card-content-text">
@@ -28,7 +28,6 @@
                     <mat-card-actions>
                         <button mat-raised-button class="action-btn action-btn-apply"
                             (click)="openDialog()">Apply</button>
-                        <button mat-raised-button class="action-btn action-btn-learn">Learn</button>
                     </mat-card-actions>
                 </mat-card>
             </div>

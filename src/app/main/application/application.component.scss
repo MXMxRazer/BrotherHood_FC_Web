@@ -1,21 +1,19 @@
 @import '../../app.component.scss';
 
-$membership_content_clr: #3e0c15ec;
-
 .application-super {
-    background-color: $membership_content_clr;
-    @include spread-around();
-    color: #eee;
 
     &-sub {
         padding: 1.4em;
-        width: 80%;
-        background-color: transparent;
+        width: 60%;
         margin: auto;
+        background-color: #111;
 
         &-header {
             margin: 1em auto 2em auto;
             text-align: center;
+            color: $primary-txt-clr;
+            font-weight: bolder;
+            letter-spacing: 2px; 
 
             mat-card-title {
                 font-size: 2.8em;
@@ -40,14 +38,18 @@ $membership_content_clr: #3e0c15ec;
             &-container {
 
                 mat-card {
-                    background: #eee;
-                    box-shadow: 5px 5px 15px 5px #000000;
-                    color: #333;
+                    background: darken($primary-txt-clr, 30%);
+                    box-shadow: 0em 0em 0.4em #fff;
+                    color: #111;
 
                     &-header {
                         font-size: 2.8em;
                         font-weight: bolder;
                         margin: 0.6em auto 0em auto;
+                        color: white;
+                        background-color: #333;
+                        padding: 0.8em; 
+                        border-radius: 2em;  
 
                         mat-card-title {
                             font-size: inherit;
@@ -80,7 +82,7 @@ $membership_content_clr: #3e0c15ec;
                     padding: 1.4em 0em;
 
                     .action-btn {
-                        background-color: darken($membership_content_clr, 10%);
+                        background-color: darken($secondary-clr, 38%);
                         color: #eee;
                         font-size: 1.2em;
                         width: 24%;

@@ -30,6 +30,7 @@ import { ResponsiveComponentComponent } from './responsive-component/responsive-
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatchesComponent } from './matches/matches.component';
 import { CarouselMemberComponent } from './main/members/carousel-members/carousel-members.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { CarouselMemberComponent } from './main/members/carousel-members/carouse
     MatDialogModule,
     MatStepperModule,
     MatExpansionModule,
+    NgbModule,
   ],
   providers: [
     Logger,

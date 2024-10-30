@@ -6,119 +6,32 @@
 }
 
 .box-container {
-    display: flex;
-    justify-content: center;
-    border-radius: 1rem;
-    margin: auto; 
-    position: relative;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Space between grid items */
+    padding: 1.2em; /* Padding around the grid */
+    margin-top: 2em; 
+}
 
-    .box {
-        border-radius: 1rem;
-        position: relative;
-        width: 100%;
-        height: 42vh;
-        margin: 20px;
-        transform-style: preserve-3d;
-        perspective: 1000px;
-        cursor: pointer;
+.box {
+    width: 80%;
+    margin: auto;  
+    background: linear-gradient(to bottom, darken($secondary-clr, 20%), #111 80%); 
+    color: white; 
+    padding: 1em; 
+    text-align: center; 
+    border-radius: 2em; 
 
-        .body {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 10vw;
-            height: 14vw;
-            transform-style: preserve-3d;
-            transition: 0.9s ease;
+    .body {
 
-            .imgContainer {
-                position: relative;
-                top: 0;
-                left: 12%;
-                width: 90%;
-                height: 100%;
-                border-radius: 0.8rem;
-                transform-style: preserve-3d;
-                transition: 0.6s ease-in-out;
+        .imgContainer {
 
-                .title-name-container {
-                    background-color: #3e0c158f;
-                    position: absolute;
-                    width: inherit;
-                    left: 10%;
-                    bottom: 9%;
-                    border-radius: inherit;
-                    border-top-right-radius: 0;
-                    border-top-left-radius: 0;
-                    text-align: center;
-                    border: none;
-
-                    &-context {
-                        color: #fff;
-                        padding: 0.4rem 0rem;
-                        border: none;
-                    }
-                }
-
-                img {
-                    border-radius: inherit;
-                    position: absolute;
-                    top: 0;
-                    left: 10%;
-                    width: 90%;
-                    height: 90%;
-                    object-fit: cover;
-                    filter: brightness(92%);
-                }
-            }
-
-            .content {
-                position: absolute;
-                // visibility: hidden;
-                border-radius: 0.8rem;
-                top: 1%;
-                width: 80%;
-                height: 100%;   
-                backface-visibility: hidden;
-                transform-style: preserve-3d;
-                transform: rotateY(180deg);
-
-                div {
-                    border-radius: 0.8rem;
-                    transform-style: preserve-3d;
-                    padding: 1.2rem;
-                    height: 90%;
-                    top: 2%;
-                    right: 16%;
-                    position: relative;
-                    background-color: #6a0c1d91;
-                    transform: translateZ(100px);
-                    opacity: 0;
-
-                    &:hover {
-                        opacity: 1; 
-                    }
-
-                    h3 {
-                        letter-spacing: 1px;
-                    }
-                }
-            }
-        }
-
-        &:hover {
-            .title-name-container {
-                visibility: hidden;
-                transition: 0.3s ease;
-            }
-
-            .body {
-                transform: rotateY(180deg);
-            }
-
-            .imgContainer {
-                width: 0% !important;
+            img {
+                width: 100%;
+                border-radius: 2em;
             }
         }
     }
+
 }
+

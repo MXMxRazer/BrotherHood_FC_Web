@@ -50,7 +50,7 @@ $indentation: 0rem 2rem;
 
         &-members {
             background: #111;
-            margin: 1em 0em !important; 
+            margin-top: 1em !important;  
             position: relative; 
             width: 110vw;
             left: -4%;
@@ -66,6 +66,19 @@ $indentation: 0rem 2rem;
                     margin: auto;
                 }
             }
+        }
+
+        &-application {
+            background: #111;
+            margin: 0 !important; 
+            position: relative; 
+            width: 110vw;
+            top: -1%; 
+            left: -4%;
+            padding-left: 10em;
+            padding-right: 10em; 
+            padding-top: 2em; 
+            padding-bottom: 2em;  
         }
     }
 

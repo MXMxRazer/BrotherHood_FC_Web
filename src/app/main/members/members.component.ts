@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-members',
@@ -11,49 +11,49 @@ export class MembersComponent {
   constructor() {
     this.memberList = [
       {
-        name: 'Bishal Shrestha',
+        name: '1',
         position: 'FWD, Commity Lead',
         context:
           'Head of the commity, doing everything possible for the growth of organization, additionally leading the sports side of the club to triumpyt.',
       },
       {
-        name: 'Bishal Shrestha',
+        name: '2a',
         position: 'FWD, Commity Lead',
         context:
           'Head of the commity, doing everything possible for the growth of organization, additionally leading the sports side of the club to triumpyt.',
       },
       {
-        name: 'Bishal Shrestha',
+        name: '3',
         position: 'FWD, Commity Lead',
         context:
           'Head of the commity, doing everything possible for the growth of organization, additionally leading the sports side of the club to triumpyt.',
       },
       {
-        name: 'Bishal Shrestha',
+        name: '4',
         position: 'FWD, Commity Lead',
         context:
           'Head of the commity, doing everything possible for the growth of organization, additionally leading the sports side of the club to triumpyt.',
       },
       {
-        name: 'Bishal Shrestha',
+        name: '5',
         position: 'FWD, Commity Lead',
         context:
           'Head of the commity, doing everything possible for the growth of organization, additionally leading the sports side of the club to triumpyt.',
       },
       {
-        name: 'Bishal Shrestha',
+        name: '6',
         position: 'FWD, Commity Lead',
         context:
           'Head of the commity, doing everything possible for the growth of organization, additionally leading the sports side of the club to triumpyt.',
       },
       {
-        name: 'Bishal Shrestha',
+        name: '7',
         position: 'FWD, Commity Lead',
         context:
           'Head of the commity, doing everything possible for the growth of organization, additionally leading the sports side of the club to triumpyt.',
       },
       {
-        name: 'Bishal Shrestha',
+        name: '8',
         position: 'FWD, Commity Lead',
         context:
           'Head of the commity, doing everything possible for the growth of organization, additionally leading the sports side of the club to triumpyt.',
