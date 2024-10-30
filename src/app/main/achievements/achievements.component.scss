@@ -54,6 +54,19 @@ section .super-container .grid-container .center {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8) !important; 
     z-index: 1;
     position: relative;
+    animation: scaleRotate 4s infinite;
+}
+
+@keyframes scaleRotate {
+    0% {
+        transform: scale(1) rotate(0deg); 
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg); 
+    }
 }
 
 .grid-container {

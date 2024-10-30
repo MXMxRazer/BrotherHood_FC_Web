@@ -1,8 +1,16 @@
+@import '../../app.component.scss';
+
 .container {
+    background: linear-gradient(to top, darken($secondary-clr, 22%), #111 60%);
     margin-bottom: 2em; 
     display: flex;
     gap: 12%;
     justify-content: center;
+    padding: 2em; 
+    opacity: 1;
+    border-top-left-radius: 4em;
+    border-bottom-right-radius: 6em;
+    border-bottom-left-radius: 1em; 
 
     &-img-section {
         width: 46%;
@@ -15,14 +23,12 @@
 
     &-form {
         width: 60%;
-        background-color: #3e0c15e2;
         color: #eee;
         padding: 1.4em 1.8rem;
         border-top-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
         border-top-right-radius: 0.2rem;
         border-bottom-left-radius: 0.2rem;
-        box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.75);
 
         & {
 
@@ -44,8 +50,16 @@
 
                 button {
                     padding: 0.4em 0.8em;
-                    font-size: 1.1em;
+                    font-size: 1.4em;
                     margin-top: 1em;
+                    background-color: lighten($primary-clr, 14%);
+                    font-weight: 500;
+                    border: none;
+                    
+                    &:hover {
+                        border: none;
+                        background-color: lighten($primary-clr, 18%);
+                    }
                 }
             }
 

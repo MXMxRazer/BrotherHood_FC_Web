@@ -35,7 +35,7 @@
     height: 100%;
     display: flex; 
     flex-direction: row;
-    background-color: lighten($primary-clr, 8%);
+    background: linear-gradient(to top, lighten($primary-clr, 8%) 56%, #ddd);
     color: white;  
     padding: 2.4em; 
 }

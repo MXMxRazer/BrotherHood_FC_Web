@@ -8,8 +8,8 @@
 .box-container {
     display: grid; 
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px; /* Space between grid items */
-    padding: 1.2em; /* Padding around the grid */
+    gap: 1em; 
+    padding: 1.2em; 
     margin-top: 2em; 
 }
 
@@ -20,7 +20,13 @@
     color: white; 
     padding: 1em; 
     text-align: center; 
-    border-radius: 2em; 
+    border-radius: 2em;
+    transition: 500ms ease-in-out; 
+
+    &:hover {
+        transform: scale(1.08);
+        cursor: pointer;
+    }
 
     .body {
 

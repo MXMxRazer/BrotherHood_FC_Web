@@ -13,6 +13,43 @@ $indentation: 0rem 2rem;
 
     &-articles {
         &-blog {
+            padding-top: 4.2em;  
+            &-heading {
+                color: white; 
+                font-size: 4em;
+                margin-bottom: 1em;  
+
+                h1 {
+                    width: fit-content; 
+                    animation: moveScaleRotate 10s ease-in-out infinite;
+                    background-color: green;
+                    padding: 0.4em; 
+                    border-radius: 0.8em;
+                    font-weight: bold;
+                    letter-spacing: 0.08em;
+                    font-size: 0.52em;
+                    box-shadow: 0 0 1.2em #fff;  
+
+                    @keyframes moveScaleRotate {
+                        0% {
+                            transform: translateX(5vw) scale(1); 
+                        }
+                        25% {
+                            transform: translateX(35vw) scale(1.5) rotate(180deg); 
+                        }
+                        50% {
+                            transform: translateX(90vw) scale(1) rotate(360deg); 
+                        }
+                        75% {
+                            transform: translateX(35vw) scale(1.5) rotate(180deg); 
+                        }
+                        100% {
+                            transform: translateX(5vw) scale(1); 
+                        }
+                    }
+                }
+            }
+
             &-context {
                 padding: $indentation;
             }
@@ -58,6 +95,32 @@ $indentation: 0rem 2rem;
             padding-right: 10em; 
             padding-top: 2em; 
             padding-bottom: 2em;    
+
+            &-heading {
+                -webkit-text-fill-color: #fff;
+                letter-spacing: 1.8px; 
+                font-size: 3.2em; 
+                font-weight: 600; 
+                padding: 0.2em 0em;
+                margin-bottom: 0.6em; 
+                text-align: center; 
+                text-shadow: 2px 2px 4px #fff;
+                animation: scaleUp 3s ease-in-out infinite; 
+
+                @keyframes scaleUp {
+                    0% {
+                        transform: scale(1);
+                    }
+
+                    50% {
+                        transform: scale(1.2);
+                    }
+
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+            }
 
             &-context {
 
