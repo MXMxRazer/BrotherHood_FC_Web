@@ -1,12 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'BH_FC_frontend';
+export class AppComponent implements OnInit {
+
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      const fragment = this.router.routerState.snapshot.root.fragment; 
+      if (fragment) {
+        const element = document.getElementById(fragment);
+        console.log(`Fra: ${fragment}`);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start'}); 
+        }
+      }
+    }); 
+
+    this.router.navigate(['/']); 
+  }
+  
+  title = 'FC Northen Yetis';
 
   public images = [
     {
