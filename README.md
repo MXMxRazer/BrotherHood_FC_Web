@@ -43,6 +43,14 @@ To get started with the project, follow the steps below:
 2. Navigate to the project directory.
 3. Follow the setup instructions in the `INSTALLATION.md` file.
 
+## Project Preview: 
+
+![Home](https://github.com/user-attachments/assets/ee9f08f7-217b-44bf-aa1c-ee85970d43ac)
+![Blogs](https://github.com/user-attachments/assets/b644dff0-151a-4c22-b83f-c5f5542b2e5f)
+![Gallery](https://github.com/user-attachments/assets/91fa448c-24a1-4c5f-ba28-014d4c7bf8d8)
+![List](https://github.com/user-attachments/assets/ff6fa883-e9af-4b30-9fd8-240dd0c5d949)
+![Contact](https://github.com/user-attachments/assets/9ae7775b-0228-40ff-a829-c62762d09ff8)
+
 ## Project Status
 
 The project is currently in progress, focusing on the development of the desktop version. Ongoing updates and information will be added to the project as development continues.
